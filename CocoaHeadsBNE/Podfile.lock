@@ -1,15 +1,18 @@
 
-DEPENDENCIES: 
-- MeetupOAuth2Client (from `git://github.com/mattconnolly/MeetupOAuth2Client.git')
-
-PODS: 
+PODS:
+- ECSlidingViewController (0.9.0)
 - MeetupOAuth2Client (1.0.0)
 
-COCOAPODS: 0.16.4
+DEPENDENCIES:
+- ECSlidingViewController (~> 0.9.0)
+- MeetupOAuth2Client (from `git://github.com/mattconnolly/MeetupOAuth2Client.git')
 
-SPEC CHECKSUMS: 
+EXTERNAL SOURCES:
+  MeetupOAuth2Client:
+    :git: git://github.com/mattconnolly/MeetupOAuth2Client.git
+
+SPEC CHECKSUMS:
+  ECSlidingViewController: 46cb6a6cc72e359a19d2f232728be08685450d90
   MeetupOAuth2Client: e85b647365c562a101b39cd43e11d455da65c42d
 
-EXTERNAL SOURCES: 
-  MeetupOAuth2Client: 
-    :git: git://github.com/mattconnolly/MeetupOAuth2Client.git
+COCOAPODS: 0.16.4
