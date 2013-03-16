@@ -16,3 +16,7 @@ build/*
 *.perspectivev3
 *.pbxuser
 xcuserdata
+
+# Ignore Pods directory
+
+Pods/
