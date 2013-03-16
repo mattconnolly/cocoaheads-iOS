@@ -29,3 +29,4 @@ Suggested license:
 * MIT
 * Apache Software License
 
+It was resolved by vote that we will contribute under the BSD license.
