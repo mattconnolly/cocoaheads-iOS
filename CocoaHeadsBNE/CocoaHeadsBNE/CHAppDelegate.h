@@ -19,4 +19,7 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+// create a new clean managed object context:
+- (NSManagedObjectContext*)newManagedObjectContext;
+
 @end

@@ -135,6 +135,20 @@
     return _persistentStoreCoordinator;
 }
 
+
+// create a new clean managed object context:
+- (NSManagedObjectContext*)newManagedObjectContext;
+{
+    NSManagedObjectContext* context = nil;
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        context = [[NSManagedObjectContext alloc] init];
+        [context setPersistentStoreCoordinator:coordinator];
+    }
+    return context;
+}
+
+
 #pragma mark - Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
@@ -142,5 +156,6 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
 
 @end
