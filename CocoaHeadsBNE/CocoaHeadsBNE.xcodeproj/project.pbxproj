@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92030FB16F42FF800D7AAE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FA16F42FF800D7AAE7 /* UIKit.framework */; };
+		C92030FD16F42FF800D7AAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
+		C92030FF16F42FF800D7AAE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */; };
+		C920310116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
+		C920310716F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920310516F42FF800D7AAE7 /* InfoPlist.strings */; };
+		C920310916F42FF800D7AAE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C920310816F42FF800D7AAE7 /* main.m */; };
+		C920310D16F42FF800D7AAE7 /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */; };
+		C920310F16F42FF800D7AAE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C920310E16F42FF800D7AAE7 /* Default.png */; };
+		C920311116F42FF800D7AAE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C920311016F42FF800D7AAE7 /* Default@2x.png */; };
+		C920311316F42FF800D7AAE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C920311216F42FF800D7AAE7 /* Default-568h@2x.png */; };
+		C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */; };
+		C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */; };
+		C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FA16F42FF800D7AAE7 /* UIKit.framework */; };
+		C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
+		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
+		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
+		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C92030F616F42FF800D7AAE7;
+			remoteInfo = CocoaHeadsBNE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsBNE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92030FA16F42FF800D7AAE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C92030FC16F42FF800D7AAE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C920310016F42FF800D7AAE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C920310416F42FF800D7AAE7 /* CocoaHeadsBNE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHeadsBNE-Info.plist"; sourceTree = "<group>"; };
+		C920310616F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C920310816F42FF800D7AAE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C920310A16F42FF800D7AAE7 /* CocoaHeadsBNE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaHeadsBNE-Prefix.pch"; sourceTree = "<group>"; };
+		C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
+		C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		C920310E16F42FF800D7AAE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C920311016F42FF800D7AAE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C920311216F42FF800D7AAE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C920311516F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaHeadsBNE.xcdatamodel; sourceTree = "<group>"; };
+		C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsBNETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C920312616F42FF800D7AAE7 /* CocoaHeadsBNETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHeadsBNETests-Info.plist"; sourceTree = "<group>"; };
+		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
+		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92030F416F42FF800D7AAE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92030FB16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
+				C92030FD16F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
+				C92030FF16F42FF800D7AAE7 /* CoreGraphics.framework in Frameworks */,
+				C920310116F42FF800D7AAE7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920311816F42FF800D7AAE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */,
+				C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
+				C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
+				C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92030EE16F42FF800D7AAE7 = {
+			isa = PBXGroup;
+			children = (
+				C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */,
+				C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */,
+				C92030F916F42FF800D7AAE7 /* Frameworks */,
+				C92030F816F42FF800D7AAE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C92030F816F42FF800D7AAE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */,
+				C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92030F916F42FF800D7AAE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92030FA16F42FF800D7AAE7 /* UIKit.framework */,
+				C92030FC16F42FF800D7AAE7 /* Foundation.framework */,
+				C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */,
+				C920310016F42FF800D7AAE7 /* CoreData.framework */,
+				C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */ = {
+			isa = PBXGroup;
+			children = (
+				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
+				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
+				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
+				C920310316F42FF800D7AAE7 /* Supporting Files */,
+			);
+			path = CocoaHeadsBNE;
+			sourceTree = "<group>";
+		};
+		C920310316F42FF800D7AAE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C920310416F42FF800D7AAE7 /* CocoaHeadsBNE-Info.plist */,
+				C920310516F42FF800D7AAE7 /* InfoPlist.strings */,
+				C920310816F42FF800D7AAE7 /* main.m */,
+				C920310A16F42FF800D7AAE7 /* CocoaHeadsBNE-Prefix.pch */,
+				C920310E16F42FF800D7AAE7 /* Default.png */,
+				C920311016F42FF800D7AAE7 /* Default@2x.png */,
+				C920311216F42FF800D7AAE7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */ = {
+			isa = PBXGroup;
+			children = (
+				C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */,
+				C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */,
+				C920312516F42FF800D7AAE7 /* Supporting Files */,
+			);
+			path = CocoaHeadsBNETests;
+			sourceTree = "<group>";
+		};
+		C920312516F42FF800D7AAE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C920312616F42FF800D7AAE7 /* CocoaHeadsBNETests-Info.plist */,
+				C920312716F42FF800D7AAE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C920312F16F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNE" */;
+			buildPhases = (
+				C92030F316F42FF800D7AAE7 /* Sources */,
+				C92030F416F42FF800D7AAE7 /* Frameworks */,
+				C92030F516F42FF800D7AAE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaHeadsBNE;
+			productName = CocoaHeadsBNE;
+			productReference = C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C920313216F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNETests" */;
+			buildPhases = (
+				C920311716F42FF800D7AAE7 /* Sources */,
+				C920311816F42FF800D7AAE7 /* Frameworks */,
+				C920311916F42FF800D7AAE7 /* Resources */,
+				C920311A16F42FF800D7AAE7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C920312316F42FF800D7AAE7 /* PBXTargetDependency */,
+			);
+			name = CocoaHeadsBNETests;
+			productName = CocoaHeadsBNETests;
+			productReference = C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C92030EF16F42FF800D7AAE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "CocoaHeads Brisbane";
+			};
+			buildConfigurationList = C92030F216F42FF800D7AAE7 /* Build configuration list for PBXProject "CocoaHeadsBNE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C92030EE16F42FF800D7AAE7;
+			productRefGroup = C92030F816F42FF800D7AAE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */,
+				C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C92030F516F42FF800D7AAE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920310716F42FF800D7AAE7 /* InfoPlist.strings in Resources */,
+				C920310F16F42FF800D7AAE7 /* Default.png in Resources */,
+				C920311116F42FF800D7AAE7 /* Default@2x.png in Resources */,
+				C920311316F42FF800D7AAE7 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920311916F42FF800D7AAE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C920311A16F42FF800D7AAE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C92030F316F42FF800D7AAE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920310916F42FF800D7AAE7 /* main.m in Sources */,
+				C920310D16F42FF800D7AAE7 /* CHAppDelegate.m in Sources */,
+				C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C920311716F42FF800D7AAE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C920312316F42FF800D7AAE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
+			targetProxy = C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C920310516F42FF800D7AAE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C920310616F42FF800D7AAE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C920312716F42FF800D7AAE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C920312816F42FF800D7AAE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C920312D16F42FF800D7AAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C920312E16F42FF800D7AAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C920313016F42FF800D7AAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHeadsBNE/CocoaHeadsBNE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C920313116F42FF800D7AAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHeadsBNE/CocoaHeadsBNE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C920313316F42FF800D7AAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHeadsBNETests/CocoaHeadsBNETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C920313416F42FF800D7AAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHeadsBNETests/CocoaHeadsBNETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C92030F216F42FF800D7AAE7 /* Build configuration list for PBXProject "CocoaHeadsBNE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920312D16F42FF800D7AAE7 /* Debug */,
+				C920312E16F42FF800D7AAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C920312F16F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920313016F42FF800D7AAE7 /* Debug */,
+				C920313116F42FF800D7AAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C920313216F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C920313316F42FF800D7AAE7 /* Debug */,
+				C920313416F42FF800D7AAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C920311516F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodel */,
+			);
+			currentVersion = C920311516F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodel */;
+			path = CocoaHeadsBNE.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C92030EF16F42FF800D7AAE7 /* Project object */;
+}
