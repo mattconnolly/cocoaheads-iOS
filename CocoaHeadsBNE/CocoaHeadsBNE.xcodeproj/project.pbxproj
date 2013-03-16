@@ -95,7 +95,6 @@
 		C92030EE16F42FF800D7AAE7 = {
 			isa = PBXGroup;
 			children = (
-				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */,
 				C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */,
 				C92030F916F42FF800D7AAE7 /* Frameworks */,
@@ -132,6 +131,7 @@
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
+				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
 			);
 			path = CocoaHeadsBNE;
