@@ -1,15 +1,15 @@
 
-PODS:
-- MeetupOAuth2Client (1.0.0)
-
-DEPENDENCIES:
+DEPENDENCIES: 
 - MeetupOAuth2Client (from `git://github.com/mattconnolly/MeetupOAuth2Client.git')
 
-EXTERNAL SOURCES:
-  MeetupOAuth2Client:
-    :git: git://github.com/mattconnolly/MeetupOAuth2Client.git
-
-SPEC CHECKSUMS:
-  MeetupOAuth2Client: e85b647365c562a101b39cd43e11d455da65c42d
+PODS: 
+- MeetupOAuth2Client (1.0.0)
 
 COCOAPODS: 0.16.4
+
+SPEC CHECKSUMS: 
+  MeetupOAuth2Client: e85b647365c562a101b39cd43e11d455da65c42d
+
+EXTERNAL SOURCES: 
+  MeetupOAuth2Client: 
+    :git: git://github.com/mattconnolly/MeetupOAuth2Client.git
