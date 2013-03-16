@@ -4,7 +4,7 @@ Contributors (in alphabetical order:)
 * Eoin McCarthy
 * Matt Connolly
 * Roger Stephen
-* Yan Bodson
+* Yann Bodson
 
 
 Contributing
