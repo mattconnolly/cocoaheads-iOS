@@ -7,6 +7,7 @@
 //
 
 #import "CHAppDelegate.h"
+#import "ECSlidingViewController.h"
 
 @implementation CHAppDelegate
 
@@ -16,7 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    // Sets the main view controller as the top contoller of the sliding view controller.
+    ECSlidingViewController *slidingViewController = (ECSlidingViewController *)self.window.rootViewController;
+    if ([slidingViewController isKindOfClass:[ECSlidingViewController class]]) {
+        slidingViewController.topViewController = [slidingViewController.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    } else {
+        NSLog(@"The root view controller is not a ECSlidingViewController!");
+    }
     return YES;
 }
 
