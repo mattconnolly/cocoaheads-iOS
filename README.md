@@ -1,22 +1,29 @@
 cocoaheads-iOS
 ==============
 
-Place holder for the Brisbane cocoaheads app, for the Brisbane CocoaHeads meetup group at http://www.meetup.com/CocoaHeads/
+Place holder for the Brisbane CocoaHeads app, for the [Brisbane CocoaHeads meetup group](http://www.meetup.com/CocoaHeads/).
 
 Features
 --------
 
 Nice to have...
 
+* Show meetup time and location on a map, give directions.
 * Meetup API integration
-* Plug page for published apps from Cocoaheads members
-* Buddy or Parse API integration
 * FB + Twitter integration
 * Credits / Info page
+* Plug page for published apps from CocoaHeads members
+* Buddy or Parse API integration
 * Share contacts with group members
-* Show meetup location on a map, give directions.
 * Suggestions for talk / presentation topics (+ voting)
 * Send feedback
+
+Dependencies
+------------
+
+* [MeetupOAuth2Client] (https://github.com/w5mith/MeetupOAuth2Client)
+* [ECSlidingViewController] (https://github.com/edgecase/ECSlidingViewController)
+
 
 License
 -------
@@ -29,4 +36,4 @@ Suggested license:
 * MIT
 * Apache Software License
 
-It was resolved by vote that we will contribute under the BSD license.
+It was resolved by vote that we will contribute under the **BSD license**.

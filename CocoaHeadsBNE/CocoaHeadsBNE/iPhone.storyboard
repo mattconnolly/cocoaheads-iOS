@@ -4,21 +4,96 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sliding View Controller-->
         <scene sceneID="DZa-hh-6JA">
             <objects>
-                <viewController id="Hkm-em-kIV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e5T-jG-Nd3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.71372549019999998" green="0.79607843140000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
+                <viewController id="Hkm-em-kIV" customClass="ECSlidingViewController" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nP-6C-CgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="58"/>
+            <point key="canvasLocation" x="106" y="58"/>
+        </scene>
+        <!--Main View Controller - CocoaHeads-->
+        <scene sceneID="RpA-0B-z5z">
+            <objects>
+                <viewController storyboardIdentifier="" id="nhb-W4-zZU" customClass="CHMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="RgI-aH-2ez">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.87058823529411766" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CocoaHeads" id="6hb-y7-nP8">
+                        <barButtonItem key="leftBarButtonItem" image="hamburger.png" id="Jds-iR-UvC">
+                            <color key="tintColor" red="0.7803921568627451" green="0.19607843137254902" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuButtonPressed:" destination="nhb-W4-zZU" id="uVZ-rG-YEl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHl-lG-DyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="58"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="jB1-W6-GJF">
+            <objects>
+                <tableViewController storyboardIdentifier="MenuViewController" id="5l7-pw-5i7" customClass="CHMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qtm-p3-QvU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.3294117647" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="5l7-pw-5i7" id="hgv-cE-gLk"/>
+                            <outlet property="delegate" destination="5l7-pw-5i7" id="uX6-Vt-t0v"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Iq-ob-2i3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cxg-KP-FzH">
+            <objects>
+                <navigationController storyboardIdentifier="MainViewController" id="Vtl-Zo-xYQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZLY-mn-BT7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.6588235294117647" green="0.10588235294117647" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nhb-W4-zZU" kind="relationship" relationship="rootViewController" id="OJO-hH-ZgV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZk-7S-7Se" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hamburger.png" width="20" height="12"/>
+    </resources>
+    <classes>
+        <class className="CHMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CHMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="menuButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="CHMenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CHMenuViewController.h"/>
+        </class>
+        <class className="ECSlidingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
