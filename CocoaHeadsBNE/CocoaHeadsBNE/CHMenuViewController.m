@@ -7,10 +7,42 @@
 //
 
 #import "CHMenuViewController.h"
+#import "CHMainViewController.h"
+#import <ECSlidingViewController.h>
+
+@interface MenuItem : NSObject
+
+@property (nonatomic, readonly, copy) NSString *label;
+@property (nonatomic, readonly, copy) NSString *storyboardId;
+@property (nonatomic, readonly) BOOL keepInMemory;
+// Probably add an icon as well.
+
+- (id)initWithLabel:(NSString *)label storyboardID:(NSString *)storyboardID keepInMemory:(BOOL)keep;
+
+@end
+
+@implementation MenuItem
+
+- (id)initWithLabel:(NSString *)label storyboardID:(NSString *)storyboardID keepInMemory:(BOOL)keep
+{
+    self = [super init];
+    if (self) {
+        _label = label;
+        _storyboardId = storyboardID;
+        _keepInMemory = keep;
+    }
+    return self;
+}
+
+@end
+
 
 @interface CHMenuViewController ()
 
 @property (nonatomic, strong) NSArray *menuItems;
+@property (nonatomic, strong) NSMutableDictionary *viewControllers;
+
+- (void)switchToMenuItem:(MenuItem *)menuItem;
 
 @end
 
@@ -19,7 +51,11 @@
 
 - (void)awakeFromNib
 {
-    self.menuItems = @[@"Home", @"Resources", @"Settings", @"About", @"#cocoaheadsbne"];
+    self.viewControllers = [@{} mutableCopy];
+
+    MenuItem *homeMenuItem = [[MenuItem alloc] initWithLabel:@"Home" storyboardID:@"MainViewController" keepInMemory:YES];
+    MenuItem *aboutMenuItem = [[MenuItem alloc] initWithLabel:@"About" storyboardID:@"AboutViewController" keepInMemory:NO];
+    self.menuItems = @[homeMenuItem, aboutMenuItem];
 }
 
 - (void)viewDidLoad
@@ -27,6 +63,20 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menu-bg"]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MenuCell"];
+    [self switchToMenuItem:self.menuItems[0]];
+    self.slidingViewController.anchorRightRevealAmount = 280.0;
+}
+
+- (void)switchToMenuItem:(MenuItem *)menuItem
+{
+    UIViewController *newViewController = self.viewControllers[menuItem.storyboardId];
+    if (newViewController == nil) {
+        newViewController = [self.storyboard instantiateViewControllerWithIdentifier:menuItem.storyboardId];
+        if (menuItem.keepInMemory) {
+            self.viewControllers[menuItem.storyboardId] = newViewController;
+        }
+    }
+    self.slidingViewController.topViewController = newViewController;
 }
 
 #pragma mark - UITableViewDataSource
@@ -39,7 +89,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell" forIndexPath:indexPath];
-    cell.textLabel.text = self.menuItems[indexPath.row];
+    MenuItem *menuItem = self.menuItems[indexPath.row];
+    cell.textLabel.text = menuItem.label;
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.shadowColor = [UIColor blackColor];
@@ -52,7 +103,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.delegate menuViewController:self didSelectRowAtIndex:indexPath.row];
+    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+        CGRect frame = self.slidingViewController.topViewController.view.frame;
+        [self switchToMenuItem:self.menuItems[indexPath.row]];
+        self.slidingViewController.topViewController.view.frame = frame;
+        [self.slidingViewController resetTopView];
+    }];
+
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

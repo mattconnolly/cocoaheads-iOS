@@ -1,5 +1,4 @@
 platform :ios, '6.0'
 
 pod 'ECSlidingViewController', '~> 0.9.0'
-pod 'MeetupOAuth2Client', :git => 'git://github.com/mattconnolly/MeetupOAuth2Client.git'
-#pod 'MeetupOAuth2Client', :local => '~/programming/MeetupOAuth2Client'
+pod 'MeetupOAuth2Client', :git => 'git://github.com/w5mith/MeetupOAuth2Client.git' 

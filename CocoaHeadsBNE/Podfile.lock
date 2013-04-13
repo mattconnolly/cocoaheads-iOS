@@ -6,8 +6,8 @@ DEPENDENCIES:
   - ECSlidingViewController (~> 0.9.0)
   - MeetupOAuth2Client (from `git://github.com/mattconnolly/MeetupOAuth2Client.git`)
 
-EXTERNAL SOURCES:
-  MeetupOAuth2Client:
+EXTERNAL SOURCES: 
+  MeetupOAuth2Client: 
     :git: git://github.com/mattconnolly/MeetupOAuth2Client.git
 
 SPEC CHECKSUMS:
