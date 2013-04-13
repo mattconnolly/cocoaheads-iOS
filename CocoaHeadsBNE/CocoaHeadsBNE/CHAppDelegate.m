@@ -20,7 +20,7 @@
     // Sets the main view controller as the top contoller of the sliding view controller.
     ECSlidingViewController *slidingViewController = (ECSlidingViewController *)self.window.rootViewController;
     if ([slidingViewController isKindOfClass:[ECSlidingViewController class]]) {
-        slidingViewController.topViewController = [slidingViewController.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+        slidingViewController.underLeftViewController = [slidingViewController.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
     } else {
         NSLog(@"The root view controller is not a ECSlidingViewController!");
     }

@@ -23,6 +23,8 @@
 		AA20DDAB16F7DD28005B3B99 /* titlebar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AA20DDA916F7DD27005B3B99 /* titlebar-bg.png */; };
 		AA20DDAC16F7DD28005B3B99 /* titlebar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA20DDAA16F7DD28005B3B99 /* titlebar-bg@2x.png */; };
 		AA25BF8C16F818E3002A6A38 /* menu-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = AA25BF8B16F818E3002A6A38 /* menu-selected.png */; };
+		AA54323B17041421005E3095 /* CHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA54323A17041421005E3095 /* CHAboutViewController.m */; };
+		AA54323F1706E192005E3095 /* CHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA54323E1706E192005E3095 /* CHNavigationController.m */; };
 		AAEA8EB216F69FF500F16A0D /* CHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA8EB116F69FF500F16A0D /* CHMainViewController.m */; };
 		C92030FB16F42FF800D7AAE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FA16F42FF800D7AAE7 /* UIKit.framework */; };
 		C92030FD16F42FF800D7AAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
@@ -72,6 +74,10 @@
 		AA20DDA916F7DD27005B3B99 /* titlebar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "titlebar-bg.png"; path = "CocoaHeadsBNE/Resources/titlebar-bg.png"; sourceTree = "<group>"; };
 		AA20DDAA16F7DD28005B3B99 /* titlebar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "titlebar-bg@2x.png"; path = "CocoaHeadsBNE/Resources/titlebar-bg@2x.png"; sourceTree = "<group>"; };
 		AA25BF8B16F818E3002A6A38 /* menu-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-selected.png"; path = "CocoaHeadsBNE/Resources/menu-selected.png"; sourceTree = "<group>"; };
+		AA54323917041421005E3095 /* CHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAboutViewController.h; sourceTree = "<group>"; };
+		AA54323A17041421005E3095 /* CHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAboutViewController.m; sourceTree = "<group>"; };
+		AA54323D1706E192005E3095 /* CHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNavigationController.h; sourceTree = "<group>"; };
+		AA54323E1706E192005E3095 /* CHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNavigationController.m; sourceTree = "<group>"; };
 		AAEA8EB016F69FF500F16A0D /* CHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMainViewController.h; sourceTree = "<group>"; };
 		AAEA8EB116F69FF500F16A0D /* CHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMainViewController.m; sourceTree = "<group>"; };
 		C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsBNE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +153,21 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		AA54323C1704142C005E3095 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA20DD9D16F6F008005B3B99 /* CHMenuViewController.h */,
+				AA20DD9E16F6F008005B3B99 /* CHMenuViewController.m */,
+				AA54323D1706E192005E3095 /* CHNavigationController.h */,
+				AA54323E1706E192005E3095 /* CHNavigationController.m */,
+				AAEA8EB016F69FF500F16A0D /* CHMainViewController.h */,
+				AAEA8EB116F69FF500F16A0D /* CHMainViewController.m */,
+				AA54323917041421005E3095 /* CHAboutViewController.h */,
+				AA54323A17041421005E3095 /* CHAboutViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		C92030EE16F42FF800D7AAE7 = {
 			isa = PBXGroup;
 			children = (
@@ -186,10 +207,7 @@
 			children = (
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
-				AAEA8EB016F69FF500F16A0D /* CHMainViewController.h */,
-				AAEA8EB116F69FF500F16A0D /* CHMainViewController.m */,
-				AA20DD9D16F6F008005B3B99 /* CHMenuViewController.h */,
-				AA20DD9E16F6F008005B3B99 /* CHMenuViewController.m */,
+				AA54323C1704142C005E3095 /* View Controllers */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
@@ -375,6 +393,8 @@
 				C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */,
 				AAEA8EB216F69FF500F16A0D /* CHMainViewController.m in Sources */,
 				AA20DD9F16F6F008005B3B99 /* CHMenuViewController.m in Sources */,
+				AA54323B17041421005E3095 /* CHAboutViewController.m in Sources */,
+				AA54323F1706E192005E3095 /* CHNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
