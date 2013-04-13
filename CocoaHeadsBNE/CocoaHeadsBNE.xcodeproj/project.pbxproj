@@ -44,6 +44,10 @@
 		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
+		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
+		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
+		DB75AE8E17193B2500794C32 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8D17193B2500794C32 /* Group.m */; };
+		DB75AE9117193CA300794C32 /* CHCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE9017193CA300794C32 /* CHCoreData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,14 @@
 		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
 		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		DB75AE8917193B2500794C32 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		DB75AE8A17193B2500794C32 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		DB75AE8C17193B2500794C32 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		DB75AE8D17193B2500794C32 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		DB75AE8F17193CA300794C32 /* CHCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCoreData.h; sourceTree = "<group>"; };
+		DB75AE9017193CA300794C32 /* CHCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCoreData.m; sourceTree = "<group>"; };
 		E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -207,8 +219,16 @@
 			children = (
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
+				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
+				DB75AE9017193CA300794C32 /* CHCoreData.m */,
 				AA54323C1704142C005E3095 /* View Controllers */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
+				DB75AE8C17193B2500794C32 /* Group.h */,
+				DB75AE8D17193B2500794C32 /* Group.m */,
+				DB75AE8917193B2500794C32 /* Event.h */,
+				DB75AE8A17193B2500794C32 /* Event.m */,
+				DB75AE8617193B2400794C32 /* Venue.h */,
+				DB75AE8717193B2400794C32 /* Venue.m */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
 			);
@@ -395,6 +415,10 @@
 				AA20DD9F16F6F008005B3B99 /* CHMenuViewController.m in Sources */,
 				AA54323B17041421005E3095 /* CHAboutViewController.m in Sources */,
 				AA54323F1706E192005E3095 /* CHNavigationController.m in Sources */,
+				DB75AE8817193B2400794C32 /* Venue.m in Sources */,
+				DB75AE8B17193B2500794C32 /* Event.m in Sources */,
+				DB75AE8E17193B2500794C32 /* Group.m in Sources */,
+				DB75AE9117193CA300794C32 /* CHCoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
