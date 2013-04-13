@@ -43,6 +43,7 @@
 		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
 		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
+		C97F887E1701B41300F36268 /* oauth.plist in Resources */ = {isa = PBXBuildFile; fileRef = C97F887D1701B41300F36268 /* oauth.plist */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
 		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
+		C97F887D1701B41300F36268 /* oauth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = oauth.plist; path = CocoaHeadsBNE/oauth.plist; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				AA20DD8A16F6C75A005B3B99 /* bg@2x.png */,
 				AA20DD8B16F6C75A005B3B99 /* hamburger.png */,
 				AA20DD8C16F6C75A005B3B99 /* hamburger@2x.png */,
+				C97F887D1701B41300F36268 /* oauth.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				AA20DDAB16F7DD28005B3B99 /* titlebar-bg.png in Resources */,
 				AA20DDAC16F7DD28005B3B99 /* titlebar-bg@2x.png in Resources */,
 				AA25BF8C16F818E3002A6A38 /* menu-selected.png in Resources */,
+				C97F887E1701B41300F36268 /* oauth.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

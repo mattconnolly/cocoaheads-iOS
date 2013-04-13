@@ -7,7 +7,9 @@
 //
 
 #import "CHAppDelegate.h"
-#import "ECSlidingViewController.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>
+#import <MeetupOAuth2Client/MUOAuth2Client.h>
+#import <MeetupOAuth2Client/MUAPIRequest.h>
 
 @implementation CHAppDelegate
 
@@ -24,7 +26,94 @@
     } else {
         NSLog(@"The root view controller is not a ECSlidingViewController!");
     }
+    
+    dispatch_async(dispatch_get_main_queue(), ^()
+                   {
+                       [self testMeetup];
+                   });
     return YES;
+}
+
+- (void)testMeetup
+{
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"oauth"
+                                                     ofType:@"plist"];
+    NSData* plistData = [NSData dataWithContentsOfFile:path];
+    NSPropertyListFormat format = 0;
+    NSError* error = nil;
+    NSDictionary* oauthSettings = (NSDictionary*)[NSPropertyListSerialization propertyListWithData:plistData
+                                                                                           options:0
+                                                                                            format:&format
+                                                                                             error:&error];
+    MUOAuth2Client* client = [MUOAuth2Client sharedClient];
+    
+    NSString* clientID = oauthSettings[@"key"];
+    MUOAuth2Credential *credential = [client credentialWithClientID:clientID];
+    
+    void (^login)() = ^()
+    {
+        [client authorizeClientWithID:clientID
+                               secret:oauthSettings[@"secret"]
+                          redirectURI:oauthSettings[@"redirect"]
+                              success:^(MUOAuth2Credential *credential) {
+                                  NSLog(@"yay!");
+                                  [self testMeetup2:credential];
+                              }
+                              failure:^(NSError *error) {
+                                  NSLog(@"Error = %@", error.localizedDescription);
+                                  NSLog(@"broken");
+                              }];
+    };
+    
+    if (credential)
+    {
+        if (!credential.isExpired)
+        {
+            [self testMeetup2:credential];
+        }
+        else
+        {
+            [client refreshCredential:credential
+                              success:^(MUOAuth2Credential *credential) {
+                                  //
+                                  [self testMeetup2:credential];
+                              } failure:^(NSError *error) {
+                                  NSLog(@"Error refreshing authentication token: %@", error.localizedDescription);
+                                  login();
+                              }];
+        }
+    }
+    else
+    {
+        login();
+    }
+}
+
+
+- (void)testMeetup2:(MUOAuth2Credential*)credential
+{
+    __block int count = 0;
+    
+    void (^completion)(MUAPIRequest*request) = ^(MUAPIRequest*request)
+    {
+        NSLog(@"Request completed: %@", request.request);
+        NSLog(@"Got error: %@", request.error);
+        [request.data writeToFile:[NSString stringWithFormat:@"/tmp/meetup-%02d.json", ++count]
+                       atomically:YES];
+        NSLog(@"Got response: %@", request.responseBody);
+    };
+    
+    // make an API request
+    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/event/106662252.json"
+                         parameters:@{}
+                      andCredential:credential
+                         completion:completion];
+    
+    // make an API request
+    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/member/self.json"
+                         parameters:@{}
+                      andCredential:credential
+                         completion:completion];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

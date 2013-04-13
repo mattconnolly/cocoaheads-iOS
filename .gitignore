@@ -20,3 +20,6 @@ xcuserdata
 # Ignore Pods directory
 
 Pods/
+
+# don't check this file in.
+oauth.plist
