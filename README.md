@@ -21,9 +21,17 @@ Nice to have...
 Dependencies
 ------------
 
-* [MeetupOAuth2Client] (https://github.com/w5mith/MeetupOAuth2Client)
-* [ECSlidingViewController] (https://github.com/edgecase/ECSlidingViewController)
+* [MeetupOAuth2Client](https://github.com/w5mith/MeetupOAuth2Client)
+* [ECSlidingViewController](https://github.com/edgecase/ECSlidingViewController)
 
+Contributing
+------------
+
+This project uses CocoaPods. If you don't have CocoaPods set up, follow the instructions at the [CocoaPods site](http://cocoapods.org).
+
+Fork the project from github: [https://github.com/BrisbaneCocoaHeads/cocoaheads-iOS](https://github.com/BrisbaneCocoaHeads/cocoaheads-iOS)
+
+When you have changes, submit a pull request.
 
 License
 -------
