@@ -542,6 +542,7 @@
 		};
 		C920313316F42FF800D7AAE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -559,6 +560,7 @@
 		};
 		C920313416F42FF800D7AAE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
 				FRAMEWORK_SEARCH_PATHS = (
