@@ -41,12 +41,12 @@
 // If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel
 {
-    if (self.managedObjectModel != nil) {
-        return self.managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CocoaHeadsBNE" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return self.managedObjectModel;
+    return _managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.
