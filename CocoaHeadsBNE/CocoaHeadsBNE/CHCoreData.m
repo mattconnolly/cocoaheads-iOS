@@ -49,6 +49,21 @@
     return _managedObjectModel;
 }
 
+- (NSURL*)URLForDatabase
+{
+    NSString* databaseFilename = @"CocoaHeadsBNE.sqlite";
+#ifdef DEBUG
+    // during DEBUG (and Test), allow the database filename to be specified
+    // by an environment variable. This allows tests to be targetted to specific
+    // database files.
+    char* altName = getenv("DATABASE");
+    if (altName && strlen(altName) > 0) {
+        databaseFilename = @(altName);
+    }
+#endif
+    return [[self applicationDocumentsDirectory] URLByAppendingPathComponent:databaseFilename];
+}
+
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
@@ -57,7 +72,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CocoaHeadsBNE.sqlite"];
+    NSURL *storeURL = [self URLForDatabase];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

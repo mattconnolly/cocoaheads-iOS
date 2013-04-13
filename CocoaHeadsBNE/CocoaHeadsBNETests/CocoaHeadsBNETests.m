@@ -7,6 +7,8 @@
 //
 
 #import "CocoaHeadsBNETests.h"
+#import "CHCoreData.h"
+#import "Group.h"
 
 @implementation CocoaHeadsBNETests
 
@@ -15,6 +17,7 @@
     [super setUp];
     
     // Set-up code here.
+    _testContext = [[CHCoreData sharedInstance] newManagedObjectContext];
 }
 
 - (void)tearDown
@@ -26,7 +29,13 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in CocoaHeadsBNETests");
+    NSFetchRequest* fetch = [NSFetchRequest fetchRequestWithEntityName:@"Event"];
+    NSError* error = nil;
+    NSArray* results = [_testContext executeFetchRequest:fetch
+                                                   error:&error];
+    STAssertTrue(results.count == 0, @"no results in test database");
+    STAssertNotNil(results, @"results returned an array");
+    STAssertNil(error, @"no error in fetch request");
 }
 
 @end

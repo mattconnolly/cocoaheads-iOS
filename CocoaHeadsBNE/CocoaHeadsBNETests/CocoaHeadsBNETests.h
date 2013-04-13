@@ -9,5 +9,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 @interface CocoaHeadsBNETests : SenTestCase
-
+{
+    NSManagedObjectContext* _testContext;
+}
 @end
