@@ -8,8 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class CHCrypto;
+
 @interface CHAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextField* plistPathLabel;
+
+@property (readonly) CHCrypto* crypto;
+@property (retain) NSString* pathToPlistFile;
+@property (readonly) NSMutableDictionary* plistData;
+
+- (IBAction)openPlist:(id)sender;
+- (IBAction)savePlist:(id)sender;
 
 @end
