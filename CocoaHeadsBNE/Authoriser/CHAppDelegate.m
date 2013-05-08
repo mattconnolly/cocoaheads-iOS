@@ -40,6 +40,12 @@ SecIdentityRef getIdentity()
     if (self.pathToPlistFile.length > 0) {
         [self openPlist:self];
     }
+    
+    self.dictionaryController.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        id value = [evaluatedObject valueForKeyPath:@"value"];
+        return [value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSData class]];
+    }];
+    self.dictionaryController.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"key" ascending:YES]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
@@ -73,6 +79,8 @@ SecIdentityRef getIdentity()
             
             [[NSUserDefaults standardUserDefaults] setObject:self.pathToPlistFile
                                                       forKey:@"plist-path"];
+            
+            self.dictionaryController.content = self.plistData;
         }
     }
 }

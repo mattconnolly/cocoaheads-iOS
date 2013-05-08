@@ -14,6 +14,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField* plistPathLabel;
+@property (assign) IBOutlet NSDictionaryController* dictionaryController;
 
 @property (readonly) CHCrypto* crypto;
 @property (retain) NSString* pathToPlistFile;

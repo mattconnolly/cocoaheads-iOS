@@ -59,6 +59,7 @@
 		C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
 		C9DB516D173A786400BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
 		C9DB516F173A787000BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
+		C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
 		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
 		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
@@ -150,6 +151,8 @@
 		C9DB5167173A785A00BFC8F7 /* CHCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCrypto.m; path = CocoaHeadsBNE/CHCrypto.m; sourceTree = SOURCE_ROOT; };
 		C9DB516C173A786400BFC8F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C9DB516E173A787000BFC8F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDictionaryController.h; sourceTree = "<group>"; };
+		C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDictionaryController.m; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
 		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
@@ -357,6 +360,8 @@
 				C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */,
 				C9DB5166173A785A00BFC8F7 /* CHCrypto.h */,
 				C9DB5167173A785A00BFC8F7 /* CHCrypto.m */,
+				C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */,
+				C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */,
 				C9DB514A173A782B00BFC8F7 /* MainMenu.xib */,
 				C9DB513C173A782B00BFC8F7 /* Supporting Files */,
 			);
@@ -634,6 +639,7 @@
 				C9DB5142173A782B00BFC8F7 /* main.m in Sources */,
 				C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */,
 				C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */,
+				C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
