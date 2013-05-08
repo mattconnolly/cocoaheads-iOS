@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Authoriser' target in the 'Authoriser' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
