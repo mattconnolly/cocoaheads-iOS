@@ -20,8 +20,8 @@
     CFDictionarySetValue(options, kSecImportExportPassphrase, (__bridge CFStringRef)password);
     OSStatus err = SecPKCS12Import((__bridge_retained CFDataRef)pkcs12Data, options, &items);
     CFRelease(options);
-    NSLog(@"err = %ld", (long)err);
-    NSLog(@"items[0] = %@", items != NULL && CFArrayGetCount(items) > 0 ? CFArrayGetValueAtIndex(items, 0) : NULL);
+    //NSLog(@"err = %ld", (long)err);
+    //NSLog(@"items[0] = %@", items != NULL && CFArrayGetCount(items) > 0 ? CFArrayGetValueAtIndex(items, 0) : NULL);
     
     if (err == 0 && items != NULL && CFArrayGetCount(items) > 0)
     {
@@ -52,7 +52,7 @@
             if (err == 0) {
                 SecTrustResultType trusted = 0;
                 SecTrustEvaluate(trust, &trusted);
-                NSLog(@"trust result = %ld", (long)trusted);
+                //NSLog(@"trust result = %ld", (long)trusted);
                 
                 _publicKey = SecTrustCopyPublicKey(trust);
                 if (_publicKey == NULL) {
