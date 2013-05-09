@@ -13,6 +13,7 @@
 
 + (instancetype) newWithPKCS12Data:(NSData*)pkcs12Data password:(NSString*)password;
 {
+    if (pkcs12Data == nil) return nil;
     CHCrypto* result = nil;
     CFArrayRef items = NULL;
     CFMutableDictionaryRef options = CFDictionaryCreateMutable(NULL, 0, NULL, NULL);

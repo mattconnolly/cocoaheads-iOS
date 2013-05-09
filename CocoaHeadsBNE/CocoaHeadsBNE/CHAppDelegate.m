@@ -23,9 +23,16 @@
     }
     
     NSString* p12path = [[NSBundle mainBundle] pathForResource:@"cocoaheads" ofType:@"p12"];
-    NSLog(@"File exists = %d", [[NSFileManager defaultManager] fileExistsAtPath:p12path]);
+    if (![[NSFileManager defaultManager] fileExistsAtPath:p12path]) {
+        NSLog(@"ERROR: missing cocoaheads.p12 file!");
+    }
     _crypto = [CHCrypto newWithPKCS12Data:[NSData dataWithContentsOfFile:p12path]
                                  password:@"qwertyuiop"];
+    if (_crypto == nil)
+    {
+        NSLog(@"Failed to create crypto object!");
+    }
+    
     return YES;
 }
 
