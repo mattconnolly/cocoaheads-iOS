@@ -33,6 +33,20 @@
         NSLog(@"Failed to create crypto object!");
     }
     
+    
+    NSString* credentialsPath = [[NSBundle mainBundle] pathForResource:@"credentials"
+                                                                ofType:@"plist"];
+    NSData* credentialsData = [NSData dataWithContentsOfFile:credentialsPath];
+    NSString* errorDescription = nil;
+    NSPropertyListFormat format = 0;
+    _credentials = [NSPropertyListSerialization propertyListFromData:credentialsData
+                                                    mutabilityOption:0
+                                                              format:&format
+                                                    errorDescription:&errorDescription];
+    
+    NSLog(@"meetup_consumer_key    = %@", [self credentialForKey:@"meetup_consumer_key"]);
+    NSLog(@"meetup_consumer_secret = %@", [self credentialForKey:@"meetup_consumer_secret"]);
+    
     return YES;
 }
 
@@ -64,7 +78,6 @@
 }
 
 
-
 #pragma mark - Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
@@ -73,5 +86,20 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+
+- (NSString*)credentialForKey:(NSString*)key;
+{
+    id value = _credentials[key];
+    if ([value isKindOfClass:[NSData class]])
+    {
+        // decrypt:
+        return [_crypto decodeData:value];
+    }
+    else
+    {
+        // string / as is:
+        return value;
+    }
+}
 
 @end
