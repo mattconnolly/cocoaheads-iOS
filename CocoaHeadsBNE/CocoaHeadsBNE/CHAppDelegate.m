@@ -8,6 +8,7 @@
 
 #import "CHAppDelegate.h"
 #import "ECSlidingViewController.h"
+#import "CHCrypto.h"
 
 @implementation CHAppDelegate
 
@@ -20,6 +21,11 @@
     } else {
         NSLog(@"The root view controller is not a ECSlidingViewController!");
     }
+    
+    NSString* p12path = [[NSBundle mainBundle] pathForResource:@"cocoaheads" ofType:@"p12"];
+    NSLog(@"File exists = %d", [[NSFileManager defaultManager] fileExistsAtPath:p12path]);
+    _crypto = [CHCrypto newWithPKCS12Data:[NSData dataWithContentsOfFile:p12path]
+                                 password:@"qwertyuiop"];
     return YES;
 }
 

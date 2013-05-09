@@ -22,4 +22,7 @@
 - (NSData*)encodeString:(NSString*)plainString;
 - (NSString*)decodeData:(NSData*)encryptedData;
 
+// helper to look up an identity with the given name
++ (SecIdentityRef)identityWithName:(NSString*)name;
+
 @end

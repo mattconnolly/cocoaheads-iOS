@@ -62,6 +62,10 @@
 		C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */; };
 		C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
 		C9DB517A173BB85300BFC8F7 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5179173BB85300BFC8F7 /* credentials.plist */; };
+		C9DB5180173BBB5000BFC8F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
+		C9DB5183173BBB5000BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5182173BBB5000BFC8F7 /* main.m */; };
+		C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB518C173BBB7100BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
 		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
 		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
@@ -84,7 +88,26 @@
 			remoteGlobalIDString = C9DB5133173A782B00BFC8F7;
 			remoteInfo = Authoriser;
 		};
+		C9DB518E173BBF2200BFC8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DB517E173BBB5000BFC8F7;
+			remoteInfo = ExportCertificate;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9DB517D173BBB5000BFC8F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9DD4C816AD9C4239A47DDD9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +181,9 @@
 		C9DB5176173BB38500BFC8F7 /* CHPlistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPlistItem.h; sourceTree = "<group>"; };
 		C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPlistItem.m; sourceTree = "<group>"; };
 		C9DB5179173BB85300BFC8F7 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = CocoaHeadsBNE/Resources/credentials.plist; sourceTree = "<group>"; };
+		C9DB517F173BBB5000BFC8F7 /* ExportCertificate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExportCertificate; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB5182173BBB5000BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DB5185173BBB5000BFC8F7 /* ExportCertificate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExportCertificate-Prefix.pch"; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
 		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
@@ -213,6 +239,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9DB517C173BBB5000BFC8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB518C173BBB7100BFC8F7 /* Security.framework in Frameworks */,
+				C9DB5180173BBB5000BFC8F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -261,6 +296,7 @@
 				C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */,
 				C9DB513B173A782B00BFC8F7 /* Authoriser */,
 				C9DB5157173A782C00BFC8F7 /* AuthoriserTests */,
+				C9DB5181173BBB5000BFC8F7 /* ExportCertificate */,
 				C92030F916F42FF800D7AAE7 /* Frameworks */,
 				C92030F816F42FF800D7AAE7 /* Products */,
 				E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */,
@@ -274,6 +310,7 @@
 				C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */,
 				C9DB5134173A782B00BFC8F7 /* Authoriser.app */,
 				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */,
+				C9DB517F173BBB5000BFC8F7 /* ExportCertificate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -407,6 +444,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C9DB5181173BBB5000BFC8F7 /* ExportCertificate */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5182173BBB5000BFC8F7 /* main.m */,
+				C9DB5184173BBB5000BFC8F7 /* Supporting Files */,
+			);
+			path = ExportCertificate;
+			sourceTree = "<group>";
+		};
+		C9DB5184173BBB5000BFC8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5185173BBB5000BFC8F7 /* ExportCertificate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,10 +472,12 @@
 				C92030F416F42FF800D7AAE7 /* Frameworks */,
 				C92030F516F42FF800D7AAE7 /* Resources */,
 				65515CC31F2E487382BA4FD6 /* Copy Pods Resources */,
+				C9DB518D173BBECE00BFC8F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9DB518F173BBF2200BFC8F7 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsBNE;
 			productName = CocoaHeadsBNE;
@@ -483,6 +539,23 @@
 			productReference = C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		C9DB517E173BBB5000BFC8F7 /* ExportCertificate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */;
+			buildPhases = (
+				C9DB517B173BBB5000BFC8F7 /* Sources */,
+				C9DB517C173BBB5000BFC8F7 /* Frameworks */,
+				C9DB517D173BBB5000BFC8F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExportCertificate;
+			productName = ExportCertificate;
+			productReference = C9DB517F173BBB5000BFC8F7 /* ExportCertificate */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -509,6 +582,7 @@
 				C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */,
 				C9DB5133173A782B00BFC8F7 /* Authoriser */,
 				C9DB5151173A782C00BFC8F7 /* AuthoriserTests */,
+				C9DB517E173BBB5000BFC8F7 /* ExportCertificate */,
 			);
 		};
 /* End PBXProject section */
@@ -610,6 +684,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		C9DB518D173BBECE00BFC8F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The export certificate project is configure to be built directly into\n# its \"install location\", which is /tmp/CocoaHeadsBNE.dst plus /usr/local/bin\n# so it is: `/tmp/$PROJECT.dst/usr/local/bin/ExportCertificate`.\n#\n# we will run this script, passing the local directory of the app's build\n# directory. This will export the security identity (certificate and private\n# key) to a file called \"cocoaheads.p12\" in the build directory.\n#\n\n/tmp/$PROJECT.dst/usr/local/bin/ExportCertificate \"$CONFIGURATION_BUILD_DIR/$WRAPPER_NAME\"\n\n#open -a Finder $CONFIGURATION_BUILD_DIR/\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -662,6 +749,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9DB517B173BBB5000BFC8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB5183173BBB5000BFC8F7 /* main.m in Sources */,
+				C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -674,6 +770,11 @@
 			isa = PBXTargetDependency;
 			target = C9DB5133173A782B00BFC8F7 /* Authoriser */;
 			targetProxy = C9DB5155173A782C00BFC8F7 /* PBXContainerItemProxy */;
+		};
+		C9DB518F173BBF2200BFC8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DB517E173BBB5000BFC8F7 /* ExportCertificate */;
+			targetProxy = C9DB518E173BBF2200BFC8F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -929,6 +1030,35 @@
 			};
 			name = Release;
 		};
+		C9DB5189173BBB5000BFC8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExportCertificate/ExportCertificate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9DB518A173BBB5000BFC8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExportCertificate/ExportCertificate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -972,6 +1102,14 @@
 			buildConfigurations = (
 				C9DB5162173A782C00BFC8F7 /* Debug */,
 				C9DB5163173A782C00BFC8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DB5189173BBB5000BFC8F7 /* Debug */,
+				C9DB518A173BBB5000BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

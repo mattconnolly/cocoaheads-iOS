@@ -10,23 +10,6 @@
 #import "CHCrypto.h"
 #import "CHPlistItem.h"
 
-SecIdentityRef getIdentity()
-{
-    CFMutableDictionaryRef query = CFDictionaryCreateMutable(NULL, 4, NULL, NULL);
-    CFDictionaryAddValue(query, kSecClass, kSecClassIdentity);
-    CFDictionaryAddValue(query, kSecMatchSubjectContains, @"Brisbane CocoaHeads");
-    CFDictionaryAddValue(query, kSecReturnRef, kCFBooleanTrue);
-    CFTypeRef result;
-    OSStatus err;
-    
-    err = SecItemCopyMatching(query, &result);
-    CFRelease(query);
-    if (err == 0 && result != NULL && CFGetTypeID(result) == SecIdentityGetTypeID()) {
-        return (SecIdentityRef)result;
-    }
-    return NULL;
-}
-
 @implementation CHAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -35,7 +18,8 @@ SecIdentityRef getIdentity()
     
     self.window.delegate = self;
     
-    _crypto = [[CHCrypto alloc] initWithIdentity:getIdentity()];
+    SecIdentityRef identity = [CHCrypto identityWithName:@"Brisbane CocoaHeads"];
+    _crypto = [[CHCrypto alloc] initWithIdentity:identity];
     _plistItems = [[NSMutableArray alloc] init];
     
     self.arrayController.content = self.plistItems;

@@ -19,7 +19,7 @@
     CFDictionarySetValue(options, kSecImportExportPassphrase, (__bridge CFStringRef)password);
     OSStatus err = SecPKCS12Import((__bridge_retained CFDataRef)pkcs12Data, options, &items);
     CFRelease(options);
-    NSLog(@"err = %d", err);
+    NSLog(@"err = %ld", (long)err);
     NSLog(@"items[0] = %@", items != NULL && CFArrayGetCount(items) > 0 ? CFArrayGetValueAtIndex(items, 0) : NULL);
     
     if (err == 0 && items != NULL && CFArrayGetCount(items) > 0)
@@ -51,7 +51,7 @@
             if (err == 0) {
                 SecTrustResultType trusted = 0;
                 SecTrustEvaluate(trust, &trusted);
-                NSLog(@"trust result = %d", trusted);
+                NSLog(@"trust result = %ld", (long)trusted);
                 
                 _publicKey = SecTrustCopyPublicKey(trust);
                 if (_publicKey == NULL) {
@@ -203,5 +203,23 @@
     return string;
 }
 
+
+// helper to look up an identity with the given name
++ (SecIdentityRef)identityWithName:(NSString*)name;
+{
+    CFMutableDictionaryRef query = CFDictionaryCreateMutable(NULL, 4, NULL, NULL);
+    CFDictionaryAddValue(query, kSecClass, kSecClassIdentity);
+    CFDictionaryAddValue(query, kSecMatchSubjectContains, (__bridge CFStringRef)name);
+    CFDictionaryAddValue(query, kSecReturnRef, kCFBooleanTrue);
+    CFTypeRef result;
+    OSStatus err;
+    
+    err = SecItemCopyMatching(query, &result);
+    CFRelease(query);
+    if (err == 0 && result != NULL && CFGetTypeID(result) == SecIdentityGetTypeID()) {
+        return (SecIdentityRef)result;
+    }
+    return NULL;
+}
 
 @end
