@@ -121,4 +121,14 @@ SecIdentityRef getIdentity()
     }
 }
 
+- (IBAction)revertDocumentToSaved:(id)sender
+{
+    [self openPlist:sender];
+}
+
+- (IBAction)saveDocument:(id)sender
+{
+    [self savePlist:sender];
+}
+
 @end
