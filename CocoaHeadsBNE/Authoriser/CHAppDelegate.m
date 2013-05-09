@@ -8,6 +8,7 @@
 
 #import "CHAppDelegate.h"
 #import "CHCrypto.h"
+#import "CHPlistItem.h"
 
 SecIdentityRef getIdentity()
 {
@@ -35,17 +36,20 @@ SecIdentityRef getIdentity()
     self.window.delegate = self;
     
     _crypto = [[CHCrypto alloc] initWithIdentity:getIdentity()];
+    _plistItems = [[NSMutableArray alloc] init];
+    
+    self.arrayController.content = self.plistItems;
+    self.arrayController.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        CHPlistItem* item = (CHPlistItem*)evaluatedObject;
+        id value = item.value;
+        return [value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSData class]];
+    }];
+    self.arrayController.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"key" ascending:YES]];
     
     self.pathToPlistFile = [[NSUserDefaults standardUserDefaults] objectForKey:@"plist-path"];
     if (self.pathToPlistFile.length > 0) {
         [self openPlist:self];
     }
-    
-    self.dictionaryController.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
-        id value = [evaluatedObject valueForKeyPath:@"value"];
-        return [value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSData class]];
-    }];
-    self.dictionaryController.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"key" ascending:YES]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
@@ -80,7 +84,13 @@ SecIdentityRef getIdentity()
             [[NSUserDefaults standardUserDefaults] setObject:self.pathToPlistFile
                                                       forKey:@"plist-path"];
             
-            self.dictionaryController.content = self.plistData;
+            [self.plistItems removeAllObjects];
+            for (NSString* key in self.plistData) {
+                CHPlistItem* item = [[CHPlistItem alloc] initWithKey:key inDictionary:self.plistData];
+                item.crypto = self.crypto;
+                [self.plistItems addObject:item];
+            }
+            self.arrayController.content = self.plistItems;
         }
     }
 }

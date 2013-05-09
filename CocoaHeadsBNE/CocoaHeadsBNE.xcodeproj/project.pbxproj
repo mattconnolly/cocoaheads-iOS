@@ -60,6 +60,8 @@
 		C9DB516D173A786400BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
 		C9DB516F173A787000BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
 		C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */; };
+		C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
+		C9DB517A173BB85300BFC8F7 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5179173BB85300BFC8F7 /* credentials.plist */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
 		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
 		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
@@ -153,6 +155,9 @@
 		C9DB516E173A787000BFC8F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDictionaryController.h; sourceTree = "<group>"; };
 		C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDictionaryController.m; sourceTree = "<group>"; };
+		C9DB5176173BB38500BFC8F7 /* CHPlistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPlistItem.h; sourceTree = "<group>"; };
+		C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPlistItem.m; sourceTree = "<group>"; };
+		C9DB5179173BB85300BFC8F7 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = CocoaHeadsBNE/Resources/credentials.plist; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
 		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
@@ -228,6 +233,7 @@
 				AA20DD8A16F6C75A005B3B99 /* bg@2x.png */,
 				AA20DD8B16F6C75A005B3B99 /* hamburger.png */,
 				AA20DD8C16F6C75A005B3B99 /* hamburger@2x.png */,
+				C9DB5179173BB85300BFC8F7 /* credentials.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -362,6 +368,8 @@
 				C9DB5167173A785A00BFC8F7 /* CHCrypto.m */,
 				C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */,
 				C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */,
+				C9DB5176173BB38500BFC8F7 /* CHPlistItem.h */,
+				C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */,
 				C9DB514A173A782B00BFC8F7 /* MainMenu.xib */,
 				C9DB513C173A782B00BFC8F7 /* Supporting Files */,
 			);
@@ -529,6 +537,7 @@
 				AA20DDAB16F7DD28005B3B99 /* titlebar-bg.png in Resources */,
 				AA20DDAC16F7DD28005B3B99 /* titlebar-bg@2x.png in Resources */,
 				AA25BF8C16F818E3002A6A38 /* menu-selected.png in Resources */,
+				C9DB517A173BB85300BFC8F7 /* credentials.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +649,7 @@
 				C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */,
 				C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 				C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */,
+				C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
