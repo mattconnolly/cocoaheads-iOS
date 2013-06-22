@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0DDD04E-5722-45A7-A158-B1E82407D77C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CocoaHeadsBNE</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7E215A95-FE6C-4CD5-9AB7-6B1B07BF7186</key>
+		<string>ssh://github.com/mattconnolly/cocoaheads-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CocoaHeadsBNE/CocoaHeadsBNE.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7E215A95-FE6C-4CD5-9AB7-6B1B07BF7186</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mattconnolly/cocoaheads-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7E215A95-FE6C-4CD5-9AB7-6B1B07BF7186</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7E215A95-FE6C-4CD5-9AB7-6B1B07BF7186</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocoaheads-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

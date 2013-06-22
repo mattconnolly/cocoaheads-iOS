@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHCrypto.h"
 
 @interface CHAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    NSDictionary* _credentials;
+}
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readonly) CHCrypto* crypto;
 
 - (NSURL *)applicationDocumentsDirectory;
+
+- (NSString*)credentialForKey:(NSString*)key;
 
 @end
