@@ -28,6 +28,7 @@
     if (![[NSFileManager defaultManager] fileExistsAtPath:p12path]) {
         NSLog(@"ERROR: missing cocoaheads.p12 file!");
     }
+    
     _crypto = [CHCrypto newWithPKCS12Data:[NSData dataWithContentsOfFile:p12path]
                                  password:@"qwertyuiop"];
     if (_crypto == nil)

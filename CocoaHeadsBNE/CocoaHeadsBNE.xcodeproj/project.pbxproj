@@ -339,16 +339,16 @@
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
 				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
 				DB75AE9017193CA300794C32 /* CHCoreData.m */,
-				AA54323C1704142C005E3095 /* View Controllers */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
-				DB75AE8C17193B2500794C32 /* Group.h */,
-				DB75AE8D17193B2500794C32 /* Group.m */,
 				DB75AE8917193B2500794C32 /* Event.h */,
 				DB75AE8A17193B2500794C32 /* Event.m */,
-				DB75AE8617193B2400794C32 /* Venue.h */,
-				DB75AE8717193B2400794C32 /* Venue.m */,
+				DB75AE8C17193B2500794C32 /* Group.h */,
+				DB75AE8D17193B2500794C32 /* Group.m */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
+				DB75AE8617193B2400794C32 /* Venue.h */,
+				DB75AE8717193B2400794C32 /* Venue.m */,
+				AA54323C1704142C005E3095 /* View Controllers */,
 			);
 			path = CocoaHeadsBNE;
 			sourceTree = "<group>";
@@ -1096,6 +1096,7 @@
 				C9DB5161173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */ = {
 			isa = XCConfigurationList;
@@ -1104,6 +1105,7 @@
 				C9DB5163173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
 			isa = XCConfigurationList;
@@ -1112,6 +1114,7 @@
 				C9DB518A173BBB5000BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
