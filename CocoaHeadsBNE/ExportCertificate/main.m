@@ -35,6 +35,10 @@ int main(int argc, const char * argv[])
         if (![[NSFileManager defaultManager] fileExistsAtPath:path])
         {
             SecIdentityRef identity = [CHCrypto identityWithName:@"Brisbane CocoaHeads"];
+            if (identity == nil) {
+                NSLog(@"Certificate 'Brisbane CocoaHeads' was not found in your keychain!");
+                exit(-1);
+            }
             
             // extract private key to copy into the app.
             SecItemImportExportKeyParameters keyParams;
