@@ -7,19 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHCrypto.h"
 
 @interface CHAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    NSDictionary* _credentials;
+}
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readonly) CHCrypto* crypto;
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-// create a new clean managed object context:
-- (NSManagedObjectContext*)newManagedObjectContext;
+- (NSString*)credentialForKey:(NSString*)key;
 
 @end

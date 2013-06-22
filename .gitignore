@@ -21,5 +21,8 @@ xcuserdata
 
 Pods/
 
+# never check in .p12 files for security!
+*.p12
+
 # don't check this file in.
 oauth.plist
