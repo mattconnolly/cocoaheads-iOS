@@ -47,7 +47,7 @@
 		C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */; };
 		C9DB5142173A782B00BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5141173A782B00BFC8F7 /* main.m */; };
 		C9DB5146173A782B00BFC8F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5144173A782B00BFC8F7 /* Credits.rtf */; };
-		C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */; };
+		C9DB5149173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */; };
 		C9DB514C173A782B00BFC8F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DB514A173A782B00BFC8F7 /* MainMenu.xib */; };
 		C9DB5153173A782C00BFC8F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */; };
 		C9DB5154173A782C00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
@@ -164,8 +164,8 @@
 		C9DB5141173A782B00BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9DB5143173A782B00BFC8F7 /* Authoriser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authoriser-Prefix.pch"; sourceTree = "<group>"; };
 		C9DB5145173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
-		C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		C9DB5147173A782B00BFC8F7 /* CHAuthoriserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAuthoriserAppDelegate.h; sourceTree = "<group>"; };
+		C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAuthoriserAppDelegate.m; sourceTree = "<group>"; };
 		C9DB514B173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthoriserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DB5159173A782C00BFC8F7 /* AuthoriserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AuthoriserTests-Info.plist"; sourceTree = "<group>"; };
@@ -399,8 +399,8 @@
 		C9DB513B173A782B00BFC8F7 /* Authoriser */ = {
 			isa = PBXGroup;
 			children = (
-				C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */,
-				C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */,
+				C9DB5147173A782B00BFC8F7 /* CHAuthoriserAppDelegate.h */,
+				C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */,
 				C9DB5166173A785A00BFC8F7 /* CHCrypto.h */,
 				C9DB5167173A785A00BFC8F7 /* CHCrypto.m */,
 				C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */,
@@ -733,7 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DB5142173A782B00BFC8F7 /* main.m in Sources */,
-				C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */,
+				C9DB5149173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m in Sources */,
 				C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 				C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */,
 				C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */,
@@ -1096,6 +1096,7 @@
 				C9DB5161173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */ = {
 			isa = XCConfigurationList;
@@ -1104,6 +1105,7 @@
 				C9DB5163173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
 			isa = XCConfigurationList;
@@ -1112,6 +1114,7 @@
 				C9DB518A173BBB5000BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
