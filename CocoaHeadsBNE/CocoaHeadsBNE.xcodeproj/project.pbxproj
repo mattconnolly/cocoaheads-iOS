@@ -110,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16E3DE191776D25D004C0CA6 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
 		9DD4C816AD9C4239A47DDD9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA20DD8916F6C75A005B3B99 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = CocoaHeadsBNE/Resources/bg.png; sourceTree = "<group>"; };
 		AA20DD8A16F6C75A005B3B99 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "CocoaHeadsBNE/Resources/bg@2x.png"; sourceTree = "<group>"; };
@@ -251,6 +252,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16E3DE1A1776D272004C0CA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
+				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
+				DB75AE9017193CA300794C32 /* CHCoreData.m */,
+				16E3DE191776D25D004C0CA6 /* DataModels.h */,
+				DB75AE8C17193B2500794C32 /* Group.h */,
+				DB75AE8D17193B2500794C32 /* Group.m */,
+				DB75AE8917193B2500794C32 /* Event.h */,
+				DB75AE8A17193B2500794C32 /* Event.m */,
+				DB75AE8617193B2400794C32 /* Venue.h */,
+				DB75AE8717193B2400794C32 /* Venue.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AA20DD7416F6BFD2005B3B99 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,18 +353,10 @@
 		C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */ = {
 			isa = PBXGroup;
 			children = (
+				16E3DE1A1776D272004C0CA6 /* Models */,
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
-				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
-				DB75AE9017193CA300794C32 /* CHCoreData.m */,
 				AA54323C1704142C005E3095 /* View Controllers */,
-				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
-				DB75AE8C17193B2500794C32 /* Group.h */,
-				DB75AE8D17193B2500794C32 /* Group.m */,
-				DB75AE8917193B2500794C32 /* Event.h */,
-				DB75AE8A17193B2500794C32 /* Event.m */,
-				DB75AE8617193B2400794C32 /* Venue.h */,
-				DB75AE8717193B2400794C32 /* Venue.m */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
 			);
@@ -1096,6 +1106,7 @@
 				C9DB5161173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */ = {
 			isa = XCConfigurationList;
@@ -1104,6 +1115,7 @@
 				C9DB5163173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
 			isa = XCConfigurationList;
@@ -1112,6 +1124,7 @@
 				C9DB518A173BBB5000BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
