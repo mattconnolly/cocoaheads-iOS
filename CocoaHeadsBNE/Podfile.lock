@@ -4,14 +4,14 @@ PODS:
 
 DEPENDENCIES:
   - ECSlidingViewController (~> 0.9.0)
-  - MeetupOAuth2Client (from `git://github.com/w5mith/MeetupOAuth2Client.git`)
+  - MeetupOAuth2Client (from `https://github.com/w5mith/MeetupOAuth2Client.git`)
 
 EXTERNAL SOURCES:
   MeetupOAuth2Client:
-    :git: git://github.com/w5mith/MeetupOAuth2Client.git
+    :git: https://github.com/w5mith/MeetupOAuth2Client.git
 
 SPEC CHECKSUMS:
-  ECSlidingViewController: 46cb6a6cc72e359a19d2f232728be08685450d90
+  ECSlidingViewController: 8c991babf110cb46b9a23d64d86f898e4a9755e5
   MeetupOAuth2Client: 1c08a32583a0d2e8fce0f459a496c144f5c9b905
 
-COCOAPODS: 0.18.1
+COCOAPODS: 0.20.2

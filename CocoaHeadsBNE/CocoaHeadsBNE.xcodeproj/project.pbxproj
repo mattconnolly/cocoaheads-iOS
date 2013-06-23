@@ -43,6 +43,29 @@
 		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
 		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
+		C9DB5136173A782B00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
+		C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */; };
+		C9DB5142173A782B00BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5141173A782B00BFC8F7 /* main.m */; };
+		C9DB5146173A782B00BFC8F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5144173A782B00BFC8F7 /* Credits.rtf */; };
+		C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */; };
+		C9DB514C173A782B00BFC8F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DB514A173A782B00BFC8F7 /* MainMenu.xib */; };
+		C9DB5153173A782C00BFC8F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */; };
+		C9DB5154173A782C00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
+		C9DB515C173A782C00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB515A173A782C00BFC8F7 /* InfoPlist.strings */; };
+		C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB515E173A782C00BFC8F7 /* AuthoriserTests.m */; };
+		C9DB5168173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB5169173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB516D173A786400BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
+		C9DB516F173A787000BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
+		C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */; };
+		C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
+		C9DB517A173BB85300BFC8F7 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5179173BB85300BFC8F7 /* credentials.plist */; };
+		C9DB5180173BBB5000BFC8F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
+		C9DB5183173BBB5000BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5182173BBB5000BFC8F7 /* main.m */; };
+		C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
+		C9DB518C173BBB7100BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
 		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
 		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
@@ -58,7 +81,33 @@
 			remoteGlobalIDString = C92030F616F42FF800D7AAE7;
 			remoteInfo = CocoaHeadsBNE;
 		};
+		C9DB5155173A782C00BFC8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DB5133173A782B00BFC8F7;
+			remoteInfo = Authoriser;
+		};
+		C9DB518E173BBF2200BFC8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DB517E173BBB5000BFC8F7;
+			remoteInfo = ExportCertificate;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9DB517D173BBB5000BFC8F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9DD4C816AD9C4239A47DDD9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +154,36 @@
 		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
 		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
+		C9DB5134173A782B00BFC8F7 /* Authoriser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authoriser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB5135173A782B00BFC8F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C9DB5138173A782B00BFC8F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9DB5139173A782B00BFC8F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9DB513A173A782B00BFC8F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9DB513D173A782B00BFC8F7 /* Authoriser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Authoriser-Info.plist"; sourceTree = "<group>"; };
+		C9DB513F173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9DB5141173A782B00BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DB5143173A782B00BFC8F7 /* Authoriser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authoriser-Prefix.pch"; sourceTree = "<group>"; };
+		C9DB5145173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
+		C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		C9DB514B173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthoriserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB5159173A782C00BFC8F7 /* AuthoriserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AuthoriserTests-Info.plist"; sourceTree = "<group>"; };
+		C9DB515B173A782C00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9DB515D173A782C00BFC8F7 /* AuthoriserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthoriserTests.h; sourceTree = "<group>"; };
+		C9DB515E173A782C00BFC8F7 /* AuthoriserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthoriserTests.m; sourceTree = "<group>"; };
+		C9DB5166173A785A00BFC8F7 /* CHCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCrypto.h; path = CocoaHeadsBNE/CHCrypto.h; sourceTree = SOURCE_ROOT; };
+		C9DB5167173A785A00BFC8F7 /* CHCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCrypto.m; path = CocoaHeadsBNE/CHCrypto.m; sourceTree = SOURCE_ROOT; };
+		C9DB516C173A786400BFC8F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C9DB516E173A787000BFC8F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDictionaryController.h; sourceTree = "<group>"; };
+		C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDictionaryController.m; sourceTree = "<group>"; };
+		C9DB5176173BB38500BFC8F7 /* CHPlistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPlistItem.h; sourceTree = "<group>"; };
+		C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPlistItem.m; sourceTree = "<group>"; };
+		C9DB5179173BB85300BFC8F7 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = CocoaHeadsBNE/Resources/credentials.plist; sourceTree = "<group>"; };
+		C9DB517F173BBB5000BFC8F7 /* ExportCertificate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExportCertificate; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB5182173BBB5000BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DB5185173BBB5000BFC8F7 /* ExportCertificate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExportCertificate-Prefix.pch"; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
 		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
@@ -122,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DB516F173A787000BFC8F7 /* Security.framework in Frameworks */,
 				C92030FB16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
 				C92030FD16F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
 				C92030FF16F42FF800D7AAE7 /* CoreGraphics.framework in Frameworks */,
@@ -138,6 +218,33 @@
 				C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
 				C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
 				C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB5131173A782B00BFC8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB516D173A786400BFC8F7 /* Security.framework in Frameworks */,
+				C9DB5136173A782B00BFC8F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB514E173A782C00BFC8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB5153173A782C00BFC8F7 /* SenTestingKit.framework in Frameworks */,
+				C9DB5154173A782C00BFC8F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB517C173BBB5000BFC8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB518C173BBB7100BFC8F7 /* Security.framework in Frameworks */,
+				C9DB5180173BBB5000BFC8F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +268,7 @@
 				AA20DD8A16F6C75A005B3B99 /* bg@2x.png */,
 				AA20DD8B16F6C75A005B3B99 /* hamburger.png */,
 				AA20DD8C16F6C75A005B3B99 /* hamburger@2x.png */,
+				C9DB5179173BB85300BFC8F7 /* credentials.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -186,6 +294,9 @@
 				C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */,
 				AA20DD7416F6BFD2005B3B99 /* Resources */,
 				C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */,
+				C9DB513B173A782B00BFC8F7 /* Authoriser */,
+				C9DB5157173A782C00BFC8F7 /* AuthoriserTests */,
+				C9DB5181173BBB5000BFC8F7 /* ExportCertificate */,
 				C92030F916F42FF800D7AAE7 /* Frameworks */,
 				C92030F816F42FF800D7AAE7 /* Products */,
 				E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */,
@@ -197,6 +308,9 @@
 			children = (
 				C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */,
 				C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */,
+				C9DB5134173A782B00BFC8F7 /* Authoriser.app */,
+				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */,
+				C9DB517F173BBB5000BFC8F7 /* ExportCertificate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,12 +318,16 @@
 		C92030F916F42FF800D7AAE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C92030FA16F42FF800D7AAE7 /* UIKit.framework */,
-				C92030FC16F42FF800D7AAE7 /* Foundation.framework */,
-				C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */,
+				C9DB5135173A782B00BFC8F7 /* Cocoa.framework */,
 				C920310016F42FF800D7AAE7 /* CoreData.framework */,
-				C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */,
+				C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */,
+				C92030FC16F42FF800D7AAE7 /* Foundation.framework */,
 				9DD4C816AD9C4239A47DDD9E /* libPods.a */,
+				C9DB5137173A782B00BFC8F7 /* Other Frameworks */,
+				C9DB516E173A787000BFC8F7 /* Security.framework */,
+				C9DB516C173A786400BFC8F7 /* Security.framework */,
+				C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */,
+				C92030FA16F42FF800D7AAE7 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,6 +386,81 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C9DB5137173A782B00BFC8F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5138173A782B00BFC8F7 /* AppKit.framework */,
+				C9DB5139173A782B00BFC8F7 /* CoreData.framework */,
+				C9DB513A173A782B00BFC8F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9DB513B173A782B00BFC8F7 /* Authoriser */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */,
+				C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */,
+				C9DB5166173A785A00BFC8F7 /* CHCrypto.h */,
+				C9DB5167173A785A00BFC8F7 /* CHCrypto.m */,
+				C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */,
+				C9DB5171173A864200BFC8F7 /* CHDictionaryController.m */,
+				C9DB5176173BB38500BFC8F7 /* CHPlistItem.h */,
+				C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */,
+				C9DB514A173A782B00BFC8F7 /* MainMenu.xib */,
+				C9DB513C173A782B00BFC8F7 /* Supporting Files */,
+			);
+			path = Authoriser;
+			sourceTree = "<group>";
+		};
+		C9DB513C173A782B00BFC8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB513D173A782B00BFC8F7 /* Authoriser-Info.plist */,
+				C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */,
+				C9DB5141173A782B00BFC8F7 /* main.m */,
+				C9DB5143173A782B00BFC8F7 /* Authoriser-Prefix.pch */,
+				C9DB5144173A782B00BFC8F7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DB5157173A782C00BFC8F7 /* AuthoriserTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB515D173A782C00BFC8F7 /* AuthoriserTests.h */,
+				C9DB515E173A782C00BFC8F7 /* AuthoriserTests.m */,
+				C9DB5158173A782C00BFC8F7 /* Supporting Files */,
+			);
+			path = AuthoriserTests;
+			sourceTree = "<group>";
+		};
+		C9DB5158173A782C00BFC8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5159173A782C00BFC8F7 /* AuthoriserTests-Info.plist */,
+				C9DB515A173A782C00BFC8F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DB5181173BBB5000BFC8F7 /* ExportCertificate */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5182173BBB5000BFC8F7 /* main.m */,
+				C9DB5184173BBB5000BFC8F7 /* Supporting Files */,
+			);
+			path = ExportCertificate;
+			sourceTree = "<group>";
+		};
+		C9DB5184173BBB5000BFC8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB5185173BBB5000BFC8F7 /* ExportCertificate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,10 +472,12 @@
 				C92030F416F42FF800D7AAE7 /* Frameworks */,
 				C92030F516F42FF800D7AAE7 /* Resources */,
 				65515CC31F2E487382BA4FD6 /* Copy Pods Resources */,
+				C9DB518D173BBECE00BFC8F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9DB518F173BBF2200BFC8F7 /* PBXTargetDependency */,
 			);
 			name = CocoaHeadsBNE;
 			productName = CocoaHeadsBNE;
@@ -308,6 +503,59 @@
 			productReference = C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		C9DB5133173A782B00BFC8F7 /* Authoriser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DB5164173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "Authoriser" */;
+			buildPhases = (
+				C9DB5130173A782B00BFC8F7 /* Sources */,
+				C9DB5131173A782B00BFC8F7 /* Frameworks */,
+				C9DB5132173A782B00BFC8F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Authoriser;
+			productName = Authoriser;
+			productReference = C9DB5134173A782B00BFC8F7 /* Authoriser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9DB5151173A782C00BFC8F7 /* AuthoriserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */;
+			buildPhases = (
+				C9DB514D173A782C00BFC8F7 /* Sources */,
+				C9DB514E173A782C00BFC8F7 /* Frameworks */,
+				C9DB514F173A782C00BFC8F7 /* Resources */,
+				C9DB5150173A782C00BFC8F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9DB5156173A782C00BFC8F7 /* PBXTargetDependency */,
+			);
+			name = AuthoriserTests;
+			productName = AuthoriserTests;
+			productReference = C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C9DB517E173BBB5000BFC8F7 /* ExportCertificate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */;
+			buildPhases = (
+				C9DB517B173BBB5000BFC8F7 /* Sources */,
+				C9DB517C173BBB5000BFC8F7 /* Frameworks */,
+				C9DB517D173BBB5000BFC8F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExportCertificate;
+			productName = ExportCertificate;
+			productReference = C9DB517F173BBB5000BFC8F7 /* ExportCertificate */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +580,9 @@
 			targets = (
 				C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */,
 				C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */,
+				C9DB5133173A782B00BFC8F7 /* Authoriser */,
+				C9DB5151173A782C00BFC8F7 /* AuthoriserTests */,
+				C9DB517E173BBB5000BFC8F7 /* ExportCertificate */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +611,7 @@
 				AA20DDAB16F7DD28005B3B99 /* titlebar-bg.png in Resources */,
 				AA20DDAC16F7DD28005B3B99 /* titlebar-bg@2x.png in Resources */,
 				AA25BF8C16F818E3002A6A38 /* menu-selected.png in Resources */,
+				C9DB517A173BB85300BFC8F7 /* credentials.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +620,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB5132173A782B00BFC8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */,
+				C9DB5146173A782B00BFC8F7 /* Credits.rtf in Resources */,
+				C9DB514C173A782B00BFC8F7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB514F173A782C00BFC8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB515C173A782C00BFC8F7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +671,32 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		C9DB5150173A782C00BFC8F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C9DB518D173BBECE00BFC8F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The export certificate project is configure to be built directly into\n# its \"install location\", which is /tmp/CocoaHeadsBNE.dst plus /usr/local/bin\n# so it is: `/tmp/$PROJECT.dst/usr/local/bin/ExportCertificate`.\n#\n# we will run this script, passing the local directory of the app's build\n# directory. This will export the security identity (certificate and private\n# key) to a file called \"cocoaheads.p12\" in the build directory.\n#\n\n/tmp/$PROJECT.dst/usr/local/bin/ExportCertificate \"$CONFIGURATION_BUILD_DIR/$WRAPPER_NAME\"\n\n#open -a Finder $CONFIGURATION_BUILD_DIR/\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -419,6 +715,7 @@
 				DB75AE8B17193B2500794C32 /* Event.m in Sources */,
 				DB75AE8E17193B2500794C32 /* Group.m in Sources */,
 				DB75AE9117193CA300794C32 /* CHCoreData.m in Sources */,
+				C9DB5168173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +724,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */,
+				C9DB5169173A785A00BFC8F7 /* CHCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB5130173A782B00BFC8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB5142173A782B00BFC8F7 /* main.m in Sources */,
+				C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */,
+				C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */,
+				C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */,
+				C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB514D173A782C00BFC8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */,
+				C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DB517B173BBB5000BFC8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DB5183173BBB5000BFC8F7 /* main.m in Sources */,
+				C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +765,16 @@
 			isa = PBXTargetDependency;
 			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
 			targetProxy = C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */;
+		};
+		C9DB5156173A782C00BFC8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DB5133173A782B00BFC8F7 /* Authoriser */;
+			targetProxy = C9DB5155173A782C00BFC8F7 /* PBXContainerItemProxy */;
+		};
+		C9DB518F173BBF2200BFC8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DB517E173BBB5000BFC8F7 /* ExportCertificate */;
+			targetProxy = C9DB518E173BBF2200BFC8F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,6 +791,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				C920312816F42FF800D7AAE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DB513F173A782B00BFC8F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9DB5144173A782B00BFC8F7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DB5145173A782B00BFC8F7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C9DB514A173A782B00BFC8F7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DB514B173A782B00BFC8F7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C9DB515A173A782C00BFC8F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DB515B173A782C00BFC8F7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -576,6 +946,119 @@
 			};
 			name = Release;
 		};
+		C9DB5160173A782C00BFC8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Authoriser/Authoriser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9DB5161173A782C00BFC8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Authoriser/Authoriser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9DB5162173A782C00BFC8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "AuthoriserTests/AuthoriserTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C9DB5163173A782C00BFC8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "AuthoriserTests/AuthoriserTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		C9DB5189173BBB5000BFC8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExportCertificate/ExportCertificate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9DB518A173BBB5000BFC8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExportCertificate/ExportCertificate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,6 +1088,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C9DB5164173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "Authoriser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DB5160173A782C00BFC8F7 /* Debug */,
+				C9DB5161173A782C00BFC8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DB5162173A782C00BFC8F7 /* Debug */,
+				C9DB5163173A782C00BFC8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DB5189173BBB5000BFC8F7 /* Debug */,
+				C9DB518A173BBB5000BFC8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
