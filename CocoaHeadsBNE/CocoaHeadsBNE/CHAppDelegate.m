@@ -9,6 +9,9 @@
 #import "CHAppDelegate.h"
 #import "ECSlidingViewController.h"
 #import "CHCrypto.h"
+#import "CHCertificatePassword.h"
+#import <MeetupOAuth2Client/MUAPIRequest.h>
+#import <MeetupOAuth2Client/MUOAuth2Client.h>
 
 @implementation CHAppDelegate
 
@@ -27,7 +30,7 @@
         NSLog(@"ERROR: missing cocoaheads.p12 file!");
     }
     _crypto = [CHCrypto newWithPKCS12Data:[NSData dataWithContentsOfFile:p12path]
-                                 password:@"qwertyuiop"];
+                                 password:[CHCertificatePassword string]];
     if (_crypto == nil)
     {
         NSLog(@"Failed to create crypto object!");
@@ -48,6 +51,92 @@
     NSLog(@"meetup_consumer_secret = %@", [self credentialForKey:@"meetup_consumer_secret"]);
     
     return YES;
+}
+
+NSString* REDIRECT = @"cocoaheadsbne://oauth2";
+
+- (void)testMeetup
+{
+//    NSString* path = [[NSBundle mainBundle] pathForResource:@"oauth"
+//                                                     ofType:@"plist"];
+//    NSData* plistData = [NSData dataWithContentsOfFile:path];
+//    NSPropertyListFormat format = 0;
+//    NSError* error = nil;
+//    NSDictionary* oauthSettings = (NSDictionary*)[NSPropertyListSerialization propertyListWithData:plistData
+//                                                                                           options:0
+//                                                                                            format:&format
+//                                                                                             error:&error];
+    MUOAuth2Client* client = [MUOAuth2Client sharedClient];
+    
+    NSString* clientID = [self credentialForKey:@"meetup_application_key"];
+    NSString* secret = [self credentialForKey:@"meetup_application_secret"];
+    
+    MUOAuth2Credential *credential = [client credentialWithClientID:clientID];
+    
+    void (^login)() = ^()
+    {
+        [client authorizeClientWithID:clientID
+                               secret:secret
+                          redirectURI:REDIRECT
+                              success:^(MUOAuth2Credential *credential) {
+                                  NSLog(@"yay!");
+                                  [self testMeetup2:credential];
+                              }
+                              failure:^(NSError *error) {
+                                  NSLog(@"Error = %@", error.localizedDescription);
+                                  NSLog(@"broken");
+                              }];
+    };
+    
+    if (credential)
+    {
+        if (!credential.isExpired)
+        {
+            [self testMeetup2:credential];
+        }
+        else
+        {
+            [client refreshCredential:credential
+                              success:^(MUOAuth2Credential *credential) {
+                                  //
+                                  [self testMeetup2:credential];
+                              } failure:^(NSError *error) {
+                                  NSLog(@"Error refreshing authentication token: %@", error.localizedDescription);
+                                  login();
+                              }];
+        }
+    }
+    else
+    {
+        login();
+    }
+}
+
+
+- (void)testMeetup2:(MUOAuth2Credential*)credential
+{
+    __block int count = 0;
+    
+    void (^completion)(MUAPIRequest*request) = ^(MUAPIRequest*request)
+    {
+        NSLog(@"Request completed: %@", request.request);
+        NSLog(@"Got error: %@", request.error);
+        [request.data writeToFile:[NSString stringWithFormat:@"/tmp/meetup-%02d.json", ++count]
+                       atomically:YES];
+        NSLog(@"Got response: %@", request.responseBody);
+    };
+    
+    // make an API request
+    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/event/106662252.json"
+                         parameters:@{}
+                      andCredential:credential
+                         completion:completion];
+    
+    // make an API request
+    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/member/self.json"
+                         parameters:@{}
+                      andCredential:credential
+                         completion:completion];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

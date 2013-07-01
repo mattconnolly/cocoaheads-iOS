@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 CocoaHeads Brisbane. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface AuthoriserTests : SenTestCase
+@class CHCrypto;
 
+@interface AuthoriserTests : XCTestCase
+{
+    CHCrypto* crypto;
+}
 @end

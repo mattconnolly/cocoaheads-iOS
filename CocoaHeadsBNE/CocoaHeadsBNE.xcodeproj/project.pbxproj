@@ -43,13 +43,18 @@
 		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
 		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
+		C925EFF617818E1800C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925EFF517818E1800C2D65B /* Security.framework */; };
+		C925F02A1781967F00C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
+		C925F02D1781984D00C2D65B /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
+		C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
+		C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
+		C9C137821775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9DB5136173A782B00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
 		C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */; };
 		C9DB5142173A782B00BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5141173A782B00BFC8F7 /* main.m */; };
 		C9DB5146173A782B00BFC8F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9DB5144173A782B00BFC8F7 /* Credits.rtf */; };
-		C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */; };
+		C9DB5149173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */; };
 		C9DB514C173A782B00BFC8F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DB514A173A782B00BFC8F7 /* MainMenu.xib */; };
-		C9DB5153173A782C00BFC8F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */; };
 		C9DB5154173A782C00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
 		C9DB515C173A782C00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB515A173A782C00BFC8F7 /* InfoPlist.strings */; };
 		C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB515E173A782C00BFC8F7 /* AuthoriserTests.m */; };
@@ -154,6 +159,9 @@
 		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
 		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
+		C925EFF517818E1800C2D65B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C9C1377E1775A3DD005C48C8 /* CHCertificatePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCertificatePassword.h; sourceTree = "<group>"; };
+		C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCertificatePassword.m; sourceTree = "<group>"; };
 		C9DB5134173A782B00BFC8F7 /* Authoriser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authoriser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DB5135173A782B00BFC8F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C9DB5138173A782B00BFC8F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -164,10 +172,10 @@
 		C9DB5141173A782B00BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9DB5143173A782B00BFC8F7 /* Authoriser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authoriser-Prefix.pch"; sourceTree = "<group>"; };
 		C9DB5145173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
-		C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		C9DB5147173A782B00BFC8F7 /* CHAuthoriserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAuthoriserAppDelegate.h; sourceTree = "<group>"; };
+		C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAuthoriserAppDelegate.m; sourceTree = "<group>"; };
 		C9DB514B173A782B00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthoriserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB5152173A782C00BFC8F7 /* AuthoriserTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = AuthoriserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DB5159173A782C00BFC8F7 /* AuthoriserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AuthoriserTests-Info.plist"; sourceTree = "<group>"; };
 		C9DB515B173A782C00BFC8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9DB515D173A782C00BFC8F7 /* AuthoriserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthoriserTests.h; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C925F02A1781967F00C2D65B /* Security.framework in Frameworks */,
 				C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */,
 				C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
 				C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
@@ -234,7 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DB5153173A782C00BFC8F7 /* SenTestingKit.framework in Frameworks */,
+				C925EFF617818E1800C2D65B /* Security.framework in Frameworks */,
 				C9DB5154173A782C00BFC8F7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +318,7 @@
 				C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */,
 				C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */,
 				C9DB5134173A782B00BFC8F7 /* Authoriser.app */,
-				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */,
+				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.xctest */,
 				C9DB517F173BBB5000BFC8F7 /* ExportCertificate */,
 			);
 			name = Products;
@@ -318,6 +327,7 @@
 		C92030F916F42FF800D7AAE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C925EFF517818E1800C2D65B /* Security.framework */,
 				C9DB5135173A782B00BFC8F7 /* Cocoa.framework */,
 				C920310016F42FF800D7AAE7 /* CoreData.framework */,
 				C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */,
@@ -337,18 +347,20 @@
 			children = (
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
+				C9C1377E1775A3DD005C48C8 /* CHCertificatePassword.h */,
+				C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */,
 				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
 				DB75AE9017193CA300794C32 /* CHCoreData.m */,
-				AA54323C1704142C005E3095 /* View Controllers */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
-				DB75AE8C17193B2500794C32 /* Group.h */,
-				DB75AE8D17193B2500794C32 /* Group.m */,
 				DB75AE8917193B2500794C32 /* Event.h */,
 				DB75AE8A17193B2500794C32 /* Event.m */,
-				DB75AE8617193B2400794C32 /* Venue.h */,
-				DB75AE8717193B2400794C32 /* Venue.m */,
+				DB75AE8C17193B2500794C32 /* Group.h */,
+				DB75AE8D17193B2500794C32 /* Group.m */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
+				DB75AE8617193B2400794C32 /* Venue.h */,
+				DB75AE8717193B2400794C32 /* Venue.m */,
+				AA54323C1704142C005E3095 /* View Controllers */,
 			);
 			path = CocoaHeadsBNE;
 			sourceTree = "<group>";
@@ -399,8 +411,8 @@
 		C9DB513B173A782B00BFC8F7 /* Authoriser */ = {
 			isa = PBXGroup;
 			children = (
-				C9DB5147173A782B00BFC8F7 /* CHAppDelegate.h */,
-				C9DB5148173A782B00BFC8F7 /* CHAppDelegate.m */,
+				C9DB5147173A782B00BFC8F7 /* CHAuthoriserAppDelegate.h */,
+				C9DB5148173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m */,
 				C9DB5166173A785A00BFC8F7 /* CHCrypto.h */,
 				C9DB5167173A785A00BFC8F7 /* CHCrypto.m */,
 				C9DB5170173A864200BFC8F7 /* CHDictionaryController.h */,
@@ -536,8 +548,8 @@
 			);
 			name = AuthoriserTests;
 			productName = AuthoriserTests;
-			productReference = C9DB5152173A782C00BFC8F7 /* AuthoriserTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = C9DB5152173A782C00BFC8F7 /* AuthoriserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C9DB517E173BBB5000BFC8F7 /* ExportCertificate */ = {
 			isa = PBXNativeTarget;
@@ -708,6 +720,7 @@
 				C920310D16F42FF800D7AAE7 /* CHAppDelegate.m in Sources */,
 				C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */,
 				AAEA8EB216F69FF500F16A0D /* CHMainViewController.m in Sources */,
+				C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */,
 				AA20DD9F16F6F008005B3B99 /* CHMenuViewController.m in Sources */,
 				AA54323B17041421005E3095 /* CHAboutViewController.m in Sources */,
 				AA54323F1706E192005E3095 /* CHNavigationController.m in Sources */,
@@ -725,6 +738,7 @@
 			files = (
 				C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */,
 				C9DB5169173A785A00BFC8F7 /* CHCrypto.m in Sources */,
+				C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DB5142173A782B00BFC8F7 /* main.m in Sources */,
-				C9DB5149173A782B00BFC8F7 /* CHAppDelegate.m in Sources */,
+				C9DB5149173A782B00BFC8F7 /* CHAuthoriserAppDelegate.m in Sources */,
 				C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 				C9DB5172173A864200BFC8F7 /* CHDictionaryController.m in Sources */,
 				C9DB5178173BB38500BFC8F7 /* CHPlistItem.m in Sources */,
@@ -745,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */,
+				C925F02D1781984D00C2D65B /* CHPlistItem.m in Sources */,
 				C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +770,7 @@
 			files = (
 				C9DB5183173BBB5000BFC8F7 /* main.m in Sources */,
 				C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */,
+				C9C137821775A3DD005C48C8 /* CHCertificatePassword.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,7 +889,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -995,7 +1011,6 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
@@ -1005,7 +1020,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1016,7 +1030,6 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Authoriser/Authoriser-Prefix.pch";
@@ -1026,7 +1039,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1096,6 +1108,7 @@
 				C9DB5161173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5165173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "AuthoriserTests" */ = {
 			isa = XCConfigurationList;
@@ -1104,6 +1117,7 @@
 				C9DB5163173A782C00BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9DB5188173BBB5000BFC8F7 /* Build configuration list for PBXNativeTarget "ExportCertificate" */ = {
 			isa = XCConfigurationList;
@@ -1112,6 +1126,7 @@
 				C9DB518A173BBB5000BFC8F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,5 +1,5 @@
 //
-//  CHAppDelegate.h
+//  CHAuthoriserAppDelegate.h
 //  Authoriser
 //
 //  Created by Matt Connolly on 8/05/13.
@@ -11,7 +11,7 @@
 @class CHCrypto;
 @class CHPlistItem;
 
-@interface CHAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
+@interface CHAuthoriserAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField* plistPathLabel;
