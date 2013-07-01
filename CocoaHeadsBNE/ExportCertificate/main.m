@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CHCrypto.h"
 #import <Security/Security.h>
+#import "CHCertificatePassword.h"
 
 int main(int argc, const char * argv[])
 {
@@ -44,7 +45,7 @@ int main(int argc, const char * argv[])
             SecItemImportExportKeyParameters keyParams;
             keyParams.version = SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION;
             keyParams.flags = 0;
-            keyParams.passphrase = CFSTR("qwertyuiop");
+            keyParams.passphrase = (__bridge CFStringRef)[CHCertificatePassword string];
             keyParams.alertTitle = CFSTR("alert title");
             keyParams.alertPrompt = CFSTR("alert prompt");
             keyParams.accessRef = NULL;
