@@ -10,4 +10,6 @@
 
 @interface CHMainViewController : UIViewController
 
+- (IBAction)testMeetup:(id)sender;
+
 @end

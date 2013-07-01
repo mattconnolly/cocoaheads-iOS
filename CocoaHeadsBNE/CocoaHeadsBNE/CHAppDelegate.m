@@ -13,10 +13,14 @@
 #import <MeetupOAuth2Client/MUAPIRequest.h>
 #import <MeetupOAuth2Client/MUOAuth2Client.h>
 
+static CHAppDelegate* _sharedInstance = nil;
+
 @implementation CHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    _sharedInstance = self;
+    
     // Sets the main view controller as the top contoller of the sliding view controller.
     ECSlidingViewController *slidingViewController = (ECSlidingViewController *)self.window.rootViewController;
     if ([slidingViewController isKindOfClass:[ECSlidingViewController class]]) {
@@ -53,23 +57,31 @@
     return YES;
 }
 
++ (CHAppDelegate*)sharedInstance;
+{
+    return _sharedInstance;
+}
+
 NSString* REDIRECT = @"cocoaheadsbne://oauth2";
 
-- (void)testMeetup
+- (IBAction)testMeetup:(id)sender;
 {
-//    NSString* path = [[NSBundle mainBundle] pathForResource:@"oauth"
-//                                                     ofType:@"plist"];
-//    NSData* plistData = [NSData dataWithContentsOfFile:path];
-//    NSPropertyListFormat format = 0;
-//    NSError* error = nil;
-//    NSDictionary* oauthSettings = (NSDictionary*)[NSPropertyListSerialization propertyListWithData:plistData
-//                                                                                           options:0
-//                                                                                            format:&format
-//                                                                                             error:&error];
     MUOAuth2Client* client = [MUOAuth2Client sharedClient];
     
-    NSString* clientID = [self credentialForKey:@"meetup_application_key"];
-    NSString* secret = [self credentialForKey:@"meetup_application_secret"];
+    NSString* clientID = [self credentialForKey:@"meetup_consumer_key"];
+    NSString* secret = [self credentialForKey:@"meetup_consumer_secret"];
+    
+    if (clientID == nil || secret == nil)
+    {
+        UIAlertView* alert;
+        alert = [[UIAlertView alloc] initWithTitle:@"Configuration error"
+                                           message:@"Meetup API consumer key or secret missing!"
+                                          delegate:nil
+                                 cancelButtonTitle:@"Oh"
+                                 otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
     
     MUOAuth2Credential *credential = [client credentialWithClientID:clientID];
     

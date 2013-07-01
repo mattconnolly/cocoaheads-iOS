@@ -16,8 +16,12 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, readonly) CHCrypto* crypto;
 
++ (CHAppDelegate*)sharedInstance;
+
 - (NSURL *)applicationDocumentsDirectory;
 
 - (NSString*)credentialForKey:(NSString*)key;
+
+- (IBAction)testMeetup:(id)sender;
 
 @end

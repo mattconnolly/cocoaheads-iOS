@@ -8,6 +8,7 @@
 
 #import "CHMainViewController.h"
 #import "ECSlidingViewController.h"
+#import "CHAppDelegate.h"
 
 @interface CHMainViewController ()
 
@@ -28,6 +29,11 @@
 - (void)showMenu:(id)sender
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
+}
+
+- (IBAction)testMeetup:(id)sender;
+{
+    [CHAppDelegate.sharedInstance testMeetup:sender];
 }
 
 @end
