@@ -43,10 +43,11 @@
 		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
 		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
+		C925EFF617818E1800C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925EFF517818E1800C2D65B /* Security.framework */; };
+		C925F02A1781967F00C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
 		C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9C137821775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
-		C925EFF617818E1800C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925EFF517818E1800C2D65B /* Security.framework */; };
 		C9DB5136173A782B00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
 		C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */; };
 		C9DB5142173A782B00BFC8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5141173A782B00BFC8F7 /* main.m */; };
@@ -158,9 +159,9 @@
 		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
 		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
+		C925EFF517818E1800C2D65B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C9C1377E1775A3DD005C48C8 /* CHCertificatePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCertificatePassword.h; sourceTree = "<group>"; };
 		C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCertificatePassword.m; sourceTree = "<group>"; };
-		C925EFF517818E1800C2D65B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C9DB5134173A782B00BFC8F7 /* Authoriser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authoriser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DB5135173A782B00BFC8F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C9DB5138173A782B00BFC8F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -221,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C925F02A1781967F00C2D65B /* Security.framework in Frameworks */,
 				C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */,
 				C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
 				C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
@@ -576,7 +578,7 @@
 				CLASSPREFIX = CH;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "CocoaHeads Brisbane";
-					};
+			};
 			buildConfigurationList = C92030F216F42FF800D7AAE7 /* Build configuration list for PBXProject "CocoaHeadsBNE" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
