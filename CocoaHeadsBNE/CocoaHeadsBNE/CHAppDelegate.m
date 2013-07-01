@@ -15,6 +15,16 @@
 
 static CHAppDelegate* _sharedInstance = nil;
 
+
+@interface MUOAuth2Credential(CHAppDelegate) <NSCoding>
+@property (copy, nonatomic) NSString *clientID;
+@property (copy, nonatomic) NSString *clientSecret;
+@property (copy, nonatomic, readwrite) NSString *accessToken;
+@property (copy, nonatomic) NSString *refreshToken;
+@property (strong, nonatomic) NSDate *expiry;
+@end
+
+
 @implementation CHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -85,6 +95,23 @@ NSString* REDIRECT = @"cocoaheadsbne://oauth2";
     
     MUOAuth2Credential *credential = [client credentialWithClientID:clientID];
     
+    NSUbiquitousKeyValueStore* store = [NSUbiquitousKeyValueStore defaultStore];
+    NSData* data = [store objectForKey:@"meetup-user-credential"];
+    if (data)
+    {
+        credential = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    }
+    else
+    {
+        // use Mr Anonymous refresh token
+        credential = [[MUOAuth2Credential alloc] init];
+        credential.clientID = clientID;
+        credential.clientSecret = secret;
+        credential.refreshToken = [self credentialForKey:@"meetup_anonymous_refresh_token"];
+        credential.accessToken = nil;
+        credential.expiry = [NSDate dateWithTimeIntervalSince1970:1];
+    }
+    
     void (^login)() = ^()
     {
         [client authorizeClientWithID:clientID
@@ -149,6 +176,39 @@ NSString* REDIRECT = @"cocoaheadsbne://oauth2";
                          parameters:@{}
                       andCredential:credential
                          completion:completion];
+    
+    NSString* refresh = [credential performSelector:@selector(refreshToken) withObject:nil];
+    NSString* accessToken = [credential performSelector:@selector(accessToken) withObject:nil];
+    NSDate* expiry = [credential performSelector:@selector(expiry) withObject:nil];
+    NSLog(@"refresh: %@", refresh);
+    NSLog(@"accessToken: %@", accessToken);
+    NSLog(@"expiry: %@", expiry);
+}
+
+- (IBAction)meetupLogOut:(id)sender;
+{
+    MUOAuth2Client* client = [MUOAuth2Client sharedClient];
+    NSString* clientID = [self credentialForKey:@"meetup_consumer_key"];
+    
+    UIAlertView* alert;
+    if (clientID == nil)
+    {
+        alert = [[UIAlertView alloc] initWithTitle:@"Configuration Error"
+                                           message:@"Client ID is not present in credentials file!"
+                                          delegate:nil
+                                 cancelButtonTitle:@"Oh"
+                                 otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+
+    [client forgetCredentialWithClientID:clientID];
+    alert = [[UIAlertView alloc] initWithTitle:@"Meetup API Logged out"
+                                       message:nil
+                                      delegate:nil
+                             cancelButtonTitle:@"OK"
+                             otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -11,5 +11,6 @@
 @interface CHMainViewController : UIViewController
 
 - (IBAction)testMeetup:(id)sender;
+- (IBAction)meetupLogOut:(id)sender;
 
 @end

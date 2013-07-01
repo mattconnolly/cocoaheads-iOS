@@ -23,5 +23,6 @@
 - (NSString*)credentialForKey:(NSString*)key;
 
 - (IBAction)testMeetup:(id)sender;
+- (IBAction)meetupLogOut:(id)sender;
 
 @end
