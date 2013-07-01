@@ -7,6 +7,7 @@
 //
 
 #import "AuthoriserTests.h"
+#import "CHCrypto.h"
 
 @implementation AuthoriserTests
 
@@ -15,6 +16,8 @@
     [super setUp];
     
     // Set-up code here.
+    SecIdentityRef identity = [CHCrypto identityWithName:@"Brisbane CocoaHeads"];
+    crypto = [[CHCrypto alloc] initWithIdentity:identity];
 }
 
 - (void)tearDown
@@ -24,9 +27,16 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testEncryptAndDecrypt
 {
-    STFail(@"Unit tests are not implemented yet in AuthoriserTests");
+    XCTAssertNotNil(crypto, @"crypto is not nil");
+    
+    NSString* source = @"Hello World!";
+    NSData* encrypted = [crypto encodeString:source];
+    XCTAssertNotNil(encrypted, @"encrypted data is not nil");
+    NSString* decrypted = [crypto decodeData:encrypted];
+    XCTAssertNotNil(decrypted, @"decrypted data is not nil");
+    XCTAssertEqualObjects(source, decrypted, @"decrypted string matches source string");
 }
 
 @end
