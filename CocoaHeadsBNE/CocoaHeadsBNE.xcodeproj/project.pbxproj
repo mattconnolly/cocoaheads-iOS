@@ -45,6 +45,7 @@
 		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
 		C925EFF617818E1800C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925EFF517818E1800C2D65B /* Security.framework */; };
 		C925F02A1781967F00C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
+		C925F02D1781984D00C2D65B /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
 		C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9C137821775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
@@ -758,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */,
+				C925F02D1781984D00C2D65B /* CHPlistItem.m in Sources */,
 				C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
