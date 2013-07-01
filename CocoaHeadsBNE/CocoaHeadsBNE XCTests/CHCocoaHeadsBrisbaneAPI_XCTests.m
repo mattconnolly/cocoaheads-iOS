@@ -42,10 +42,8 @@
 
 -(NSDictionary*)loadSampleJSONFile:(NSString*)filename
 {
-    filename = [filename stringByDeletingPathExtension];
-
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *url = [bundle pathForResource:filename ofType:@"json"];
+    NSString *url = [bundle pathForResource:filename ofType:nil];
     
     NSInputStream *is = [NSInputStream inputStreamWithFileAtPath:url];
     [is open];
