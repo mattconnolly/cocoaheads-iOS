@@ -48,17 +48,9 @@
 		C920311116F42FF800D7AAE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C920311016F42FF800D7AAE7 /* Default@2x.png */; };
 		C920311316F42FF800D7AAE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C920311216F42FF800D7AAE7 /* Default-568h@2x.png */; };
 		C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */; };
-		C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */; };
-		C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FA16F42FF800D7AAE7 /* UIKit.framework */; };
-		C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
-		C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C920310016F42FF800D7AAE7 /* CoreData.framework */; };
-		C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C920312716F42FF800D7AAE7 /* InfoPlist.strings */; };
-		C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */; };
 		C925EFF617818E1800C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925EFF517818E1800C2D65B /* Security.framework */; };
-		C925F02A1781967F00C2D65B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516E173A787000BFC8F7 /* Security.framework */; };
 		C925F02D1781984D00C2D65B /* CHPlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5177173BB38500BFC8F7 /* CHPlistItem.m */; };
 		C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
-		C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9C137821775A3DD005C48C8 /* CHCertificatePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */; };
 		C9DB5136173A782B00BFC8F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB5135173A782B00BFC8F7 /* Cocoa.framework */; };
 		C9DB5140173A782B00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB513E173A782B00BFC8F7 /* InfoPlist.strings */; };
@@ -70,7 +62,6 @@
 		C9DB515C173A782C00BFC8F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DB515A173A782C00BFC8F7 /* InfoPlist.strings */; };
 		C9DB515F173A782C00BFC8F7 /* AuthoriserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB515E173A782C00BFC8F7 /* AuthoriserTests.m */; };
 		C9DB5168173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
-		C9DB5169173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
 		C9DB516A173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
 		C9DB516B173A785A00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
 		C9DB516D173A786400BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
@@ -88,13 +79,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		1665331B177B064500F06614 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C92030F616F42FF800D7AAE7;
-			remoteInfo = CocoaHeadsBNE;
-		};
-		C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
 			proxyType = 1;
@@ -185,12 +169,7 @@
 		C920311016F42FF800D7AAE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C920311216F42FF800D7AAE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C920311516F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaHeadsBNE.xcdatamodel; sourceTree = "<group>"; };
-		C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsBNETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C920311D16F42FF800D7AAE7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C920312616F42FF800D7AAE7 /* CocoaHeadsBNETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHeadsBNETests-Info.plist"; sourceTree = "<group>"; };
-		C920312816F42FF800D7AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHeadsBNETests.h; sourceTree = "<group>"; };
-		C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsBNETests.m; sourceTree = "<group>"; };
 		C925EFF517818E1800C2D65B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C9C1377E1775A3DD005C48C8 /* CHCertificatePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCertificatePassword.h; sourceTree = "<group>"; };
 		C9C1377F1775A3DD005C48C8 /* CHCertificatePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCertificatePassword.m; sourceTree = "<group>"; };
@@ -251,18 +230,6 @@
 				C92030FF16F42FF800D7AAE7 /* CoreGraphics.framework in Frameworks */,
 				C920310116F42FF800D7AAE7 /* CoreData.framework in Frameworks */,
 				6FC9F6D8B2534F5296268062 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C920311816F42FF800D7AAE7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C925F02A1781967F00C2D65B /* Security.framework in Frameworks */,
-				C920311E16F42FF800D7AAE7 /* SenTestingKit.framework in Frameworks */,
-				C920311F16F42FF800D7AAE7 /* UIKit.framework in Frameworks */,
-				C920312016F42FF800D7AAE7 /* Foundation.framework in Frameworks */,
-				C920312116F42FF800D7AAE7 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +345,6 @@
 			children = (
 				C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */,
 				AA20DD7416F6BFD2005B3B99 /* Resources */,
-				C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */,
 				C9DB513B173A782B00BFC8F7 /* Authoriser */,
 				C9DB5157173A782C00BFC8F7 /* AuthoriserTests */,
 				C9DB5181173BBB5000BFC8F7 /* ExportCertificate */,
@@ -393,7 +359,6 @@
 			isa = PBXGroup;
 			children = (
 				C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */,
-				C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */,
 				C9DB5134173A782B00BFC8F7 /* Authoriser.app */,
 				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.xctest */,
 				C9DB517F173BBB5000BFC8F7 /* ExportCertificate */,
@@ -432,14 +397,8 @@
 				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
 				DB75AE9017193CA300794C32 /* CHCoreData.m */,
 				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
-				DB75AE8917193B2500794C32 /* Event.h */,
-				DB75AE8A17193B2500794C32 /* Event.m */,
-				DB75AE8C17193B2500794C32 /* Group.h */,
-				DB75AE8D17193B2500794C32 /* Group.m */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
 				C920310316F42FF800D7AAE7 /* Supporting Files */,
-				DB75AE8617193B2400794C32 /* Venue.h */,
-				DB75AE8717193B2400794C32 /* Venue.m */,
 				AA54323C1704142C005E3095 /* View Controllers */,
 				AA54323C1704142C005E3095 /* View Controllers */,
 				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
@@ -458,25 +417,6 @@
 				C920310E16F42FF800D7AAE7 /* Default.png */,
 				C920311016F42FF800D7AAE7 /* Default@2x.png */,
 				C920311216F42FF800D7AAE7 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C920312416F42FF800D7AAE7 /* CocoaHeadsBNETests */ = {
-			isa = PBXGroup;
-			children = (
-				C920312A16F42FF800D7AAE7 /* CocoaHeadsBNETests.h */,
-				C920312B16F42FF800D7AAE7 /* CocoaHeadsBNETests.m */,
-				C920312516F42FF800D7AAE7 /* Supporting Files */,
-			);
-			path = CocoaHeadsBNETests;
-			sourceTree = "<group>";
-		};
-		C920312516F42FF800D7AAE7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C920312616F42FF800D7AAE7 /* CocoaHeadsBNETests-Info.plist */,
-				C920312716F42FF800D7AAE7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -597,25 +537,6 @@
 			productReference = C92030F716F42FF800D7AAE7 /* CocoaHeadsBNE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C920313216F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNETests" */;
-			buildPhases = (
-				C920311716F42FF800D7AAE7 /* Sources */,
-				C920311816F42FF800D7AAE7 /* Frameworks */,
-				C920311916F42FF800D7AAE7 /* Resources */,
-				C920311A16F42FF800D7AAE7 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C920312316F42FF800D7AAE7 /* PBXTargetDependency */,
-			);
-			name = CocoaHeadsBNETests;
-			productName = CocoaHeadsBNETests;
-			productReference = C920311C16F42FF800D7AAE7 /* CocoaHeadsBNETests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		C9DB5133173A782B00BFC8F7 /* Authoriser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9DB5164173A782C00BFC8F7 /* Build configuration list for PBXNativeTarget "Authoriser" */;
@@ -697,7 +618,6 @@
 			projectRoot = "";
 			targets = (
 				C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */,
-				C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */,
 				1665330C177B064400F06614 /* CocoaHeadsBNE XCTests */,
 				C9DB5133173A782B00BFC8F7 /* Authoriser */,
 				C9DB5151173A782C00BFC8F7 /* AuthoriserTests */,
@@ -744,14 +664,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C920311916F42FF800D7AAE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C920312916F42FF800D7AAE7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C9DB5132173A782B00BFC8F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -786,19 +698,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-		};
-		C920311A16F42FF800D7AAE7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 		C9DB5150173A782C00BFC8F7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -858,16 +757,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C920311716F42FF800D7AAE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C920312C16F42FF800D7AAE7 /* CocoaHeadsBNETests.m in Sources */,
-				C9DB5169173A785A00BFC8F7 /* CHCrypto.m in Sources */,
-				C9C137811775A3DD005C48C8 /* CHCertificatePassword.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C9DB5130173A782B00BFC8F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -908,11 +797,6 @@
 			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
 			targetProxy = 1665331B177B064500F06614 /* PBXContainerItemProxy */;
 		};
-		C920312316F42FF800D7AAE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
-			targetProxy = C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */;
-		};
 		C9DB5156173A782C00BFC8F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C9DB5133173A782B00BFC8F7 /* Authoriser */;
@@ -938,14 +822,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				C920310616F42FF800D7AAE7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C920312716F42FF800D7AAE7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C920312816F42FF800D7AAE7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1120,42 +996,6 @@
 			};
 			name = Release;
 		};
-		C920313316F42FF800D7AAE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
-				INFOPLIST_FILE = "CocoaHeadsBNETests/CocoaHeadsBNETests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		C920313416F42FF800D7AAE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaHeadsBNE/CocoaHeadsBNE-Prefix.pch";
-				INFOPLIST_FILE = "CocoaHeadsBNETests/CocoaHeadsBNETests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		C9DB5160173A782C00BFC8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1285,15 +1125,6 @@
 			buildConfigurations = (
 				C920313016F42FF800D7AAE7 /* Debug */,
 				C920313116F42FF800D7AAE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C920313216F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNETests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C920313316F42FF800D7AAE7 /* Debug */,
-				C920313416F42FF800D7AAE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
