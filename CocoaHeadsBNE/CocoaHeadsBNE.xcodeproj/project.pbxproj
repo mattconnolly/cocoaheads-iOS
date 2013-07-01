@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1652F07D177E786500E6B4E1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652F07C177E786500E6B4E1 /* Event.m */; };
+		1652F080177E786500E6B4E1 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652F07F177E786500E6B4E1 /* Group.m */; };
+		1652F083177E786500E6B4E1 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652F082177E786500E6B4E1 /* Venue.m */; };
+		1665330F177B064500F06614 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1665330E177B064500F06614 /* XCTest.framework */; };
+		16653310177B064500F06614 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FC16F42FF800D7AAE7 /* Foundation.framework */; };
+		16653311177B064500F06614 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92030FA16F42FF800D7AAE7 /* UIKit.framework */; };
+		16653317177B064500F06614 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16653315177B064500F06614 /* InfoPlist.strings */; };
+		16653319177B064500F06614 /* CHCocoaHeadsBrisbaneAPI_XCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16653318177B064500F06614 /* CHCocoaHeadsBrisbaneAPI_XCTests.m */; };
+		16653322177B075300F06614 /* meetup-event.json in Resources */ = {isa = PBXBuildFile; fileRef = 16653320177B075300F06614 /* meetup-event.json */; };
+		16653323177B075300F06614 /* meetup-member.json in Resources */ = {isa = PBXBuildFile; fileRef = 16653321177B075300F06614 /* meetup-member.json */; };
+		16653326177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 16653325177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.m */; };
 		6FC9F6D8B2534F5296268062 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD4C816AD9C4239A47DDD9E /* libPods.a */; };
 		AA20DD8D16F6C75A005B3B99 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AA20DD8916F6C75A005B3B99 /* bg.png */; };
 		AA20DD8E16F6C75A005B3B99 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA20DD8A16F6C75A005B3B99 /* bg@2x.png */; };
@@ -72,13 +83,17 @@
 		C9DB518B173BBB5E00BFC8F7 /* CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DB5167173A785A00BFC8F7 /* CHCrypto.m */; };
 		C9DB518C173BBB7100BFC8F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DB516C173A786400BFC8F7 /* Security.framework */; };
 		DB2BED4716F44C15002A75C8 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2BED4616F44C15002A75C8 /* iPhone.storyboard */; };
-		DB75AE8817193B2400794C32 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8717193B2400794C32 /* Venue.m */; };
-		DB75AE8B17193B2500794C32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8A17193B2500794C32 /* Event.m */; };
-		DB75AE8E17193B2500794C32 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE8D17193B2500794C32 /* Group.m */; };
 		DB75AE9117193CA300794C32 /* CHCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75AE9017193CA300794C32 /* CHCoreData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1665331B177B064500F06614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C92030F616F42FF800D7AAE7;
+			remoteInfo = CocoaHeadsBNE;
+		};
 		C920312216F42FF800D7AAE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C92030EF16F42FF800D7AAE7 /* Project object */;
@@ -115,6 +130,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1652F07B177E786500E6B4E1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		1652F07C177E786500E6B4E1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		1652F07E177E786500E6B4E1 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		1652F07F177E786500E6B4E1 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		1652F081177E786500E6B4E1 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		1652F082177E786500E6B4E1 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		1665330D177B064400F06614 /* CocoaHeadsBNE XCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaHeadsBNE XCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1665330E177B064500F06614 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		16653314177B064500F06614 /* CocoaHeadsBNE XCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHeadsBNE XCTests-Info.plist"; sourceTree = "<group>"; };
+		16653316177B064500F06614 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16653318177B064500F06614 /* CHCocoaHeadsBrisbaneAPI_XCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CHCocoaHeadsBrisbaneAPI_XCTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1665331A177B064500F06614 /* CocoaHeadsBNE XCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaHeadsBNE XCTests-Prefix.pch"; sourceTree = "<group>"; };
+		16653320177B075300F06614 /* meetup-event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "meetup-event.json"; sourceTree = "<group>"; };
+		16653321177B075300F06614 /* meetup-member.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "meetup-member.json"; sourceTree = "<group>"; };
+		16653324177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CHCocoaHeadsBrisbaneAPI.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16653325177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CHCocoaHeadsBrisbaneAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16E3DE191776D25D004C0CA6 /* CHDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CHDataModels.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		9DD4C816AD9C4239A47DDD9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA20DD8916F6C75A005B3B99 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = CocoaHeadsBNE/Resources/bg.png; sourceTree = "<group>"; };
 		AA20DD8A16F6C75A005B3B99 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "CocoaHeadsBNE/Resources/bg@2x.png"; sourceTree = "<group>"; };
@@ -193,18 +225,22 @@
 		C9DB5182173BBB5000BFC8F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9DB5185173BBB5000BFC8F7 /* ExportCertificate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExportCertificate-Prefix.pch"; sourceTree = "<group>"; };
 		DB2BED4616F44C15002A75C8 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		DB75AE8617193B2400794C32 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
-		DB75AE8717193B2400794C32 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
-		DB75AE8917193B2500794C32 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		DB75AE8A17193B2500794C32 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		DB75AE8C17193B2500794C32 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
-		DB75AE8D17193B2500794C32 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		DB75AE8F17193CA300794C32 /* CHCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCoreData.h; sourceTree = "<group>"; };
 		DB75AE9017193CA300794C32 /* CHCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCoreData.m; sourceTree = "<group>"; };
 		E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1665330A177B064400F06614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1665330F177B064500F06614 /* XCTest.framework in Frameworks */,
+				16653311177B064500F06614 /* UIKit.framework in Frameworks */,
+				16653310177B064500F06614 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C92030F416F42FF800D7AAE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +296,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16653312177B064500F06614 /* CocoaHeadsBNE XCTests */ = {
+			isa = PBXGroup;
+			children = (
+				16653318177B064500F06614 /* CHCocoaHeadsBrisbaneAPI_XCTests.m */,
+				16653320177B075300F06614 /* meetup-event.json */,
+				16653321177B075300F06614 /* meetup-member.json */,
+				16653313177B064500F06614 /* Supporting Files */,
+			);
+			path = "CocoaHeadsBNE XCTests";
+			sourceTree = "<group>";
+		};
+		16653313177B064500F06614 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16653314177B064500F06614 /* CocoaHeadsBNE XCTests-Info.plist */,
+				16653315177B064500F06614 /* InfoPlist.strings */,
+				1665331A177B064500F06614 /* CocoaHeadsBNE XCTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16E3DE1A1776D272004C0CA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C920311416F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld */,
+				1652F081177E786500E6B4E1 /* Venue.h */,
+				1652F082177E786500E6B4E1 /* Venue.m */,
+				1652F07E177E786500E6B4E1 /* Group.h */,
+				1652F07F177E786500E6B4E1 /* Group.m */,
+				1652F07B177E786500E6B4E1 /* Event.h */,
+				1652F07C177E786500E6B4E1 /* Event.m */,
+				DB75AE8F17193CA300794C32 /* CHCoreData.h */,
+				DB75AE9017193CA300794C32 /* CHCoreData.m */,
+				16E3DE191776D25D004C0CA6 /* CHDataModels.h */,
+				16653324177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.h */,
+				16653325177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AA20DD7416F6BFD2005B3B99 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +382,7 @@
 				C9DB513B173A782B00BFC8F7 /* Authoriser */,
 				C9DB5157173A782C00BFC8F7 /* AuthoriserTests */,
 				C9DB5181173BBB5000BFC8F7 /* ExportCertificate */,
+				16653312177B064500F06614 /* CocoaHeadsBNE XCTests */,
 				C92030F916F42FF800D7AAE7 /* Frameworks */,
 				C92030F816F42FF800D7AAE7 /* Products */,
 				E4F0D9B699DC47BF9BE4C9AF /* Pods.xcconfig */,
@@ -320,6 +397,7 @@
 				C9DB5134173A782B00BFC8F7 /* Authoriser.app */,
 				C9DB5152173A782C00BFC8F7 /* AuthoriserTests.xctest */,
 				C9DB517F173BBB5000BFC8F7 /* ExportCertificate */,
+				1665330D177B064400F06614 /* CocoaHeadsBNE XCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,6 +411,7 @@
 				C92030FE16F42FF800D7AAE7 /* CoreGraphics.framework */,
 				C92030FC16F42FF800D7AAE7 /* Foundation.framework */,
 				9DD4C816AD9C4239A47DDD9E /* libPods.a */,
+				1665330E177B064500F06614 /* XCTest.framework */,
 				C9DB5137173A782B00BFC8F7 /* Other Frameworks */,
 				C9DB516E173A787000BFC8F7 /* Security.framework */,
 				C9DB516C173A786400BFC8F7 /* Security.framework */,
@@ -345,6 +424,7 @@
 		C920310216F42FF800D7AAE7 /* CocoaHeadsBNE */ = {
 			isa = PBXGroup;
 			children = (
+				16E3DE1A1776D272004C0CA6 /* Models */,
 				C920310B16F42FF800D7AAE7 /* CHAppDelegate.h */,
 				C920310C16F42FF800D7AAE7 /* CHAppDelegate.m */,
 				C9C1377E1775A3DD005C48C8 /* CHCertificatePassword.h */,
@@ -361,6 +441,9 @@
 				DB75AE8617193B2400794C32 /* Venue.h */,
 				DB75AE8717193B2400794C32 /* Venue.m */,
 				AA54323C1704142C005E3095 /* View Controllers */,
+				AA54323C1704142C005E3095 /* View Controllers */,
+				DB2BED4616F44C15002A75C8 /* iPhone.storyboard */,
+				C920310316F42FF800D7AAE7 /* Supporting Files */,
 			);
 			path = CocoaHeadsBNE;
 			sourceTree = "<group>";
@@ -476,6 +559,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1665330C177B064400F06614 /* CocoaHeadsBNE XCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1665331D177B064500F06614 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNE XCTests" */;
+			buildPhases = (
+				16653309177B064400F06614 /* Sources */,
+				1665330A177B064400F06614 /* Frameworks */,
+				1665330B177B064400F06614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1665331C177B064500F06614 /* PBXTargetDependency */,
+			);
+			name = "CocoaHeadsBNE XCTests";
+			productName = "CocoaHeadsBNE XCTests";
+			productReference = 1665330D177B064400F06614 /* CocoaHeadsBNE XCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C920312F16F42FF800D7AAE7 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNE" */;
@@ -575,8 +676,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CH;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "CocoaHeads Brisbane";
+				TargetAttributes = {
+					1665330C177B064400F06614 = {
+						TestTargetID = C92030F616F42FF800D7AAE7;
+					};
+				};
 			};
 			buildConfigurationList = C92030F216F42FF800D7AAE7 /* Build configuration list for PBXProject "CocoaHeadsBNE" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -592,6 +698,7 @@
 			targets = (
 				C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */,
 				C920311B16F42FF800D7AAE7 /* CocoaHeadsBNETests */,
+				1665330C177B064400F06614 /* CocoaHeadsBNE XCTests */,
 				C9DB5133173A782B00BFC8F7 /* Authoriser */,
 				C9DB5151173A782C00BFC8F7 /* AuthoriserTests */,
 				C9DB517E173BBB5000BFC8F7 /* ExportCertificate */,
@@ -600,6 +707,16 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1665330B177B064400F06614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16653322177B075300F06614 /* meetup-event.json in Resources */,
+				16653323177B075300F06614 /* meetup-member.json in Resources */,
+				16653317177B064500F06614 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C92030F516F42FF800D7AAE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -712,21 +829,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		16653309177B064400F06614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16653319177B064500F06614 /* CHCocoaHeadsBrisbaneAPI_XCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C92030F316F42FF800D7AAE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1652F083177E786500E6B4E1 /* Venue.m in Sources */,
 				C920310916F42FF800D7AAE7 /* main.m in Sources */,
 				C920310D16F42FF800D7AAE7 /* CHAppDelegate.m in Sources */,
 				C920311616F42FF800D7AAE7 /* CocoaHeadsBNE.xcdatamodeld in Sources */,
+				1652F07D177E786500E6B4E1 /* Event.m in Sources */,
+				1652F080177E786500E6B4E1 /* Group.m in Sources */,
 				AAEA8EB216F69FF500F16A0D /* CHMainViewController.m in Sources */,
 				C9C137801775A3DD005C48C8 /* CHCertificatePassword.m in Sources */,
 				AA20DD9F16F6F008005B3B99 /* CHMenuViewController.m in Sources */,
 				AA54323B17041421005E3095 /* CHAboutViewController.m in Sources */,
+				16653326177B07C100F06614 /* CHCocoaHeadsBrisbaneAPI.m in Sources */,
 				AA54323F1706E192005E3095 /* CHNavigationController.m in Sources */,
-				DB75AE8817193B2400794C32 /* Venue.m in Sources */,
-				DB75AE8B17193B2500794C32 /* Event.m in Sources */,
-				DB75AE8E17193B2500794C32 /* Group.m in Sources */,
 				DB75AE9117193CA300794C32 /* CHCoreData.m in Sources */,
 				C9DB5168173A785A00BFC8F7 /* CHCrypto.m in Sources */,
 			);
@@ -777,6 +903,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1665331C177B064500F06614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
+			targetProxy = 1665331B177B064500F06614 /* PBXContainerItemProxy */;
+		};
 		C920312316F42FF800D7AAE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C92030F616F42FF800D7AAE7 /* CocoaHeadsBNE */;
@@ -795,6 +926,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		16653315177B064500F06614 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16653316177B064500F06614 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C920310516F42FF800D7AAE7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -846,6 +985,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1665331E177B064500F06614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE XCTests/CocoaHeadsBNE XCTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CocoaHeadsBNE XCTests/CocoaHeadsBNE XCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1665331F177B064500F06614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHeadsBNE.app/CocoaHeadsBNE";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHeadsBNE XCTests/CocoaHeadsBNE XCTests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CocoaHeadsBNE XCTests/CocoaHeadsBNE XCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		C920312D16F42FF800D7AAE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -871,7 +1065,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -895,7 +1089,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -965,7 +1159,6 @@
 		C9DB5160173A782C00BFC8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -986,7 +1179,6 @@
 		C9DB5161173A782C00BFC8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1008,7 +1200,6 @@
 		C9DB5162173A782C00BFC8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1026,7 +1217,6 @@
 		C9DB5163173A782C00BFC8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Authoriser.app/Contents/MacOS/Authoriser";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1045,7 +1235,6 @@
 		C9DB5189173BBB5000BFC8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEPLOYMENT_LOCATION = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1059,7 +1248,6 @@
 		C9DB518A173BBB5000BFC8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1074,6 +1262,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1665331D177B064500F06614 /* Build configuration list for PBXNativeTarget "CocoaHeadsBNE XCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1665331E177B064500F06614 /* Debug */,
+				1665331F177B064500F06614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C92030F216F42FF800D7AAE7 /* Build configuration list for PBXProject "CocoaHeadsBNE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

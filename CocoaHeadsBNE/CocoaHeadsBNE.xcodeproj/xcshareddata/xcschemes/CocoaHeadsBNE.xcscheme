@@ -38,6 +38,16 @@
                ReferencedContainer = "container:CocoaHeadsBNE.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1665330C177B064400F06614"
+               BuildableName = "CocoaHeadsBNE XCTests.xctest"
+               BlueprintName = "CocoaHeadsBNE XCTests"
+               ReferencedContainer = "container:CocoaHeadsBNE.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
