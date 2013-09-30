@@ -24,5 +24,6 @@
 
 - (IBAction)testMeetup:(id)sender;
 - (IBAction)meetupLogOut:(id)sender;
+- (IBAction)meetupLogIn:(id)sender;
 
 @end

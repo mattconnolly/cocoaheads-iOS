@@ -10,7 +10,10 @@
 
 @interface CHMainViewController : UIViewController
 
+@property (nonatomic,retain) UILabel* statusLabel;
+
 - (IBAction)testMeetup:(id)sender;
 - (IBAction)meetupLogOut:(id)sender;
+- (IBAction)meetupLogIn:(id)sender;
 
 @end

@@ -41,4 +41,9 @@
     [CHAppDelegate.sharedInstance meetupLogOut:sender];
 }
 
+- (IBAction)meetupLogIn:(id)sender;
+{
+    [CHAppDelegate.sharedInstance meetupLogIn:sender];
+}
+
 @end

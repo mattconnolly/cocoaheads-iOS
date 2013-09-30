@@ -166,7 +166,7 @@ NSString* REDIRECT = @"cocoaheadsbne://oauth2";
     };
     
     // make an API request
-    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/event/106662252.json"
+    [MUAPIRequest getRequestWithURL:@"https://api.meetup.com/2/event/139400932.json"
                          parameters:@{}
                       andCredential:credential
                          completion:completion];
@@ -209,6 +209,69 @@ NSString* REDIRECT = @"cocoaheadsbne://oauth2";
                              cancelButtonTitle:@"OK"
                              otherButtonTitles:nil];
     [alert show];
+}
+
+- (IBAction)meetupLogIn:(id)sender
+{
+    MUOAuth2Client* client = [MUOAuth2Client sharedClient];
+    NSString* clientID = [self credentialForKey:@"meetup_consumer_key"];
+    NSString* secret = [self credentialForKey:@"meetup_consumer_secret"];
+    MUOAuth2Credential* credential = [client credentialWithClientID:clientID];
+    
+    void (^login)() = ^()
+    {
+        [client authorizeClientWithID:clientID
+                               secret:secret
+                          redirectURI:REDIRECT
+                              success:^(MUOAuth2Credential *credential) {
+                                  NSLog(@"yay! successfully logged in!");
+                                  
+                                  UIAlertView* alert;
+                                  alert = [[UIAlertView alloc] initWithTitle:@"Logged in"
+                                                                     message:nil
+                                                                    delegate:nil
+                                                           cancelButtonTitle:nil
+                                                           otherButtonTitles:@"Ok", nil];
+                                  [alert show];
+                                  
+                                  [self testMeetup2:credential];
+                              }
+                              failure:^(NSError *error) {
+                                  NSLog(@"Error = %@", error.localizedDescription);
+                                  NSLog(@"broken");
+                              }];
+    };
+    
+    if (credential)
+    {
+        // refresh.
+        [client refreshCredential:credential
+                          success:^(MUOAuth2Credential *credential) {
+                              //
+                              NSLog(@"yay! successfully refreshed token!");
+                              
+                              UIAlertView* alert;
+                              alert = [[UIAlertView alloc] initWithTitle:@"Logged in"
+                                                                 message:@"Refreshed token"
+                                                                delegate:nil
+                                                       cancelButtonTitle:nil
+                                                       otherButtonTitles:@"Ok", nil];
+                              [alert show];
+                              
+                              [self testMeetup2:credential];
+                          } failure:^(NSError *error) {
+                              NSLog(@"Error refreshing authentication token: %@", error.localizedDescription);
+                              login();
+                          }];
+
+    }
+    else
+    {
+        // sign in.
+        login();
+    }
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

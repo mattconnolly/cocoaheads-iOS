@@ -65,6 +65,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MenuCell"];
     [self switchToMenuItem:self.menuItems[0]];
     self.slidingViewController.anchorRightRevealAmount = 280.0;
+    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
 }
 
 - (void)switchToMenuItem:(MenuItem *)menuItem
@@ -91,9 +92,10 @@
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell" forIndexPath:indexPath];
     MenuItem *menuItem = self.menuItems[indexPath.row];
     cell.textLabel.text = menuItem.label;
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor redColor];
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.textLabel.shadowColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+    cell.textLabel.shadowColor = [UIColor colorWithRed:0.4 green:0 blue:0 alpha:0.5];
     cell.textLabel.shadowOffset = CGSizeMake(0, -1);
     cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"menu-selected"] resizableImageWithCapInsets:UIEdgeInsetsZero]];
     return cell;
